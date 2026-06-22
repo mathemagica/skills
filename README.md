@@ -1,8 +1,14 @@
 # Skills
 
-This repository contains reusable engineering skills for planning, designing, debugging, scaling, and managing software systems. Each skill lives in its own folder with a `SKILL.md` file and optional platform metadata in `agents/openai.yaml`.
+## What These Skills Are For
 
-The skills are intentionally practical. They are meant to help an AI agent ask the right engineering questions, choose boring defaults, identify tradeoffs, and produce reviewable plans or code changes.
+This repository is a reusable engineering skill library for AI coding agents such as Codex and Claude Code. The skills give an agent durable, task-specific engineering judgment it can apply while planning, building, reviewing, debugging, integrating, deploying, or operating software systems.
+
+Each skill is a small, portable instruction package built around a `SKILL.md` file, with optional platform metadata in files such as `agents/openai.yaml`. A skill tells the agent when to use a pattern, what questions to ask, what tradeoffs to consider, what evidence to gather, and what kind of output to produce. Playbooks combine multiple skills into larger workflows, such as building a new web app, assessing an existing system for refactoring, or diagnosing performance bottlenecks.
+
+These skills are not application code, templates, or rigid checklists. They are reusable engineering guidance for recurring software decisions: how to separate concerns, choose frameworks and databases, design APIs, model data, reason about caching and queues, manage environments and deployments, instrument systems, and evaluate architecture before changing it.
+
+Use them when you want an agent to work more like a senior engineering collaborator: grounding recommendations in the codebase, naming tradeoffs, choosing simple defaults, sequencing work, and producing plans or code changes that can be reviewed.
 
 ## Contents
 
