@@ -1,6 +1,6 @@
 # Skills
 
-This repository contains reusable engineering skills for planning, designing, debugging, scaling, and operating software systems. Each skill lives in its own folder with a `SKILL.md` file and optional platform metadata in `agents/openai.yaml`.
+This repository contains reusable engineering skills for planning, designing, debugging, scaling, and managing software systems. Each skill lives in its own folder with a `SKILL.md` file and optional platform metadata in `agents/openai.yaml`.
 
 The skills are intentionally practical. They are meant to help an AI agent ask the right engineering questions, choose boring defaults, identify tradeoffs, and produce reviewable plans or code changes.
 
