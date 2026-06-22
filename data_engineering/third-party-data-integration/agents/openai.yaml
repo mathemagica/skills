@@ -1,0 +1,7 @@
+interface:
+  display_name: "Third Party Data Integration"
+  short_description: "Integrate external data safely"
+  default_prompt: "Use $third-party-data-integration to design this external data sync with source-of-record ownership, ID mapping, safeguards, and reconciliation."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Existing System Refactoring Assessment"
+  short_description: "Assess a system before refactoring"
+  default_prompt: "Use $existing-system-refactoring-assessment to select and sequence the relevant engineering skills, assess this existing application with evidence, and produce a risk-ranked refactoring roadmap before changing code."
+
+policy:
+  allow_implicit_invocation: true

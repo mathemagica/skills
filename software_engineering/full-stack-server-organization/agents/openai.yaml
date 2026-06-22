@@ -1,0 +1,7 @@
+interface:
+  display_name: "Full Stack Server Organization"
+  short_description: "Organize web framework server code"
+  default_prompt: "Use $full-stack-server-organization to structure this server-side web feature with framework-native MVC, API, service, validation, and persistence boundaries."
+
+policy:
+  allow_implicit_invocation: true

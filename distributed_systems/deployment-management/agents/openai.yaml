@@ -1,0 +1,7 @@
+interface:
+  display_name: "Deployment Management"
+  short_description: "Deploy apps safely across environments"
+  default_prompt: "Use $deployment-management to plan this deployment, including artifact promotion, config, secrets, migrations, verification, and rollback."
+
+policy:
+  allow_implicit_invocation: true

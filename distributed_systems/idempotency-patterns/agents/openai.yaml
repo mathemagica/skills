@@ -1,0 +1,7 @@
+interface:
+  display_name: "Idempotency Patterns"
+  short_description: "Make retries and duplicates safe"
+  default_prompt: "Use $idempotency-patterns to design this workflow so retries, duplicate delivery, and partial failures are safe."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Database Selection"
+  short_description: "Choose databases by workload fit"
+  default_prompt: "Use $database-selection to recommend the right database architecture for this system or workload and explain the tradeoffs."
+
+policy:
+  allow_implicit_invocation: true

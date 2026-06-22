@@ -1,0 +1,7 @@
+interface:
+  display_name: "System Scaling Performance"
+  short_description: "Find and fix scaling bottlenecks"
+  default_prompt: "Use $system-scaling-performance to analyze this system's CPU, memory, I/O, database, and request-rate bottlenecks and recommend scaling paths."
+
+policy:
+  allow_implicit_invocation: true

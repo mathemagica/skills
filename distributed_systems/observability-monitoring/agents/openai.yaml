@@ -1,0 +1,7 @@
+interface:
+  display_name: "Observability Monitoring"
+  short_description: "Design logs, metrics, traces, alerts"
+  default_prompt: "Use $observability-monitoring to design useful logs, metrics, traces, dashboards, and actionable alerts for this service."
+
+policy:
+  allow_implicit_invocation: true

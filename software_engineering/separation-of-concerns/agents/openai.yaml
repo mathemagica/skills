@@ -1,0 +1,7 @@
+interface:
+  display_name: "Separation of Concerns"
+  short_description: "Design clear code responsibilities"
+  default_prompt: "Use $separation-of-concerns to design or review this code with the smallest useful responsibility boundaries."
+
+policy:
+  allow_implicit_invocation: true

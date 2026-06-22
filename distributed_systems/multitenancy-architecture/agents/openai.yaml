@@ -1,0 +1,7 @@
+interface:
+  display_name: "Multitenancy Architecture"
+  short_description: "Design tenant-aware applications"
+  default_prompt: "Use $multitenancy-architecture to decide the right tenant model, isolation boundaries, data model, and business tradeoffs for this product."
+
+policy:
+  allow_implicit_invocation: true

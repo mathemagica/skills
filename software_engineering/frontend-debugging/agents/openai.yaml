@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Debugging"
+  short_description: "Debug browser UI behavior"
+  default_prompt: "Use $frontend-debugging to diagnose this frontend bug with reproduction steps, DevTools observations, runtime state, and browser verification."
+
+policy:
+  allow_implicit_invocation: true

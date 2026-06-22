@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Modeling First"
+  short_description: "Plan projects from the data model"
+  default_prompt: "Use $data-modeling-first to plan this project from business use cases, user interactions, entities, relationships, states, and access patterns."
+
+policy:
+  allow_implicit_invocation: true

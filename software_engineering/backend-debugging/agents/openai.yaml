@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Debugging"
+  short_description: "Debug server-side code systematically"
+  default_prompt: "Use $backend-debugging to diagnose this backend bug with one-variable experiments, runtime inspection, and clear frontend/backend boundary checks."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "CAP Theorem Practical Design"
+  short_description: "Apply CAP tradeoffs per workflow"
+  default_prompt: "Use $cap-theorem-practical-design to reason about consistency, availability, partition behavior, and recovery for this distributed system decision."
+
+policy:
+  allow_implicit_invocation: true

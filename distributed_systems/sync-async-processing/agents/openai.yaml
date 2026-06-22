@@ -1,0 +1,7 @@
+interface:
+  display_name: "Sync Async Processing"
+  short_description: "Choose request-path vs background work"
+  default_prompt: "Use $sync-async-processing to decide what should run synchronously in the request path versus asynchronously in workers, schedulers, or queues."
+
+policy:
+  allow_implicit_invocation: true

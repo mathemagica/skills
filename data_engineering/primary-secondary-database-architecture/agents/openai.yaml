@@ -1,0 +1,7 @@
+interface:
+  display_name: "Primary Secondary Database Architecture"
+  short_description: "Design database read replicas safely"
+  default_prompt: "Use $primary-secondary-database-architecture to decide whether read replicas or primary/secondary replication fit this database workload."
+
+policy:
+  allow_implicit_invocation: true

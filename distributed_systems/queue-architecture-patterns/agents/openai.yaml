@@ -1,0 +1,7 @@
+interface:
+  display_name: "Queue Architecture Patterns"
+  short_description: "Design queues and async workers"
+  default_prompt: "Use $queue-architecture-patterns to decide whether a queue fits this workflow and design producers, messages, workers, retries, and observability."
+
+policy:
+  allow_implicit_invocation: true

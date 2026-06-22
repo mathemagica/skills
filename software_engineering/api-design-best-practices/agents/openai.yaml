@@ -1,0 +1,7 @@
+interface:
+  display_name: "API Design Best Practices"
+  short_description: "Design safe, evolvable APIs"
+  default_prompt: "Use $api-design-best-practices to design or review this API contract for clarity, security, compatibility, and client usability."
+
+policy:
+  allow_implicit_invocation: true

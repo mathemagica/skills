@@ -1,0 +1,7 @@
+interface:
+  display_name: "System Performance Scaling Assessment"
+  short_description: "Find bottlenecks and plan scaling"
+  default_prompt: "Use $system-performance-scaling-assessment to select and sequence the relevant engineering skills, diagnose why this system is slow with evidence, identify bottlenecks, and create a practical scaling plan."
+
+policy:
+  allow_implicit_invocation: true

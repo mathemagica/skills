@@ -1,0 +1,7 @@
+interface:
+  display_name: "New Web App From Scratch"
+  short_description: "Plan a new web app using the skills library"
+  default_prompt: "Use $new-web-app-from-scratch to select and sequence the relevant engineering skills, then plan this new web app from product concept through data model, architecture, APIs, deployment, and observability."
+
+policy:
+  allow_implicit_invocation: true

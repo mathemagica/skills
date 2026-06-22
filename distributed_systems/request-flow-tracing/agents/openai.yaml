@@ -1,0 +1,7 @@
+interface:
+  display_name: "Request Flow Tracing"
+  short_description: "Trace web requests end to end"
+  default_prompt: "Use $request-flow-tracing to map how this request moves from browser through DNS, edge, load balancer, app servers, databases, and back."
+
+policy:
+  allow_implicit_invocation: true

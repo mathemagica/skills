@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Framework Selection"
+  short_description: "Choose the right backend framework"
+  default_prompt: "Use $backend-framework-selection to choose a backend framework and server architecture based on product workflows, data model, API needs, team fit, deployment constraints, operations, and maintainability."
+
+policy:
+  allow_implicit_invocation: true

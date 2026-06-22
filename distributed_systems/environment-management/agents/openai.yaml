@@ -1,0 +1,7 @@
+interface:
+  display_name: "Environment Management"
+  short_description: "Plan and manage deployment environments"
+  default_prompt: "Use $environment-management to design the simplest safe environment setup, promotion flow, and environment-specific config strategy for this system."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Query Optimization"
+  short_description: "Diagnose slow database operations"
+  default_prompt: "Use $query-optimization to diagnose this slow database-backed operation, identify the current database role, and recommend measured optimization paths."
+
+policy:
+  allow_implicit_invocation: true

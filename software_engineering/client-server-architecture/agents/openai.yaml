@@ -1,0 +1,7 @@
+interface:
+  display_name: "Client Server Architecture"
+  short_description: "Design clear client-server boundaries"
+  default_prompt: "Use $client-server-architecture to design this system component with clear client, server, API, state, and failure boundaries."
+
+policy:
+  allow_implicit_invocation: true

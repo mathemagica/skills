@@ -1,0 +1,7 @@
+interface:
+  display_name: "Caching Patterns"
+  short_description: "Design safe application caching"
+  default_prompt: "Use $caching-patterns to decide whether caching fits this workflow and define the cache layer, keys, freshness, security, and observability."
+
+policy:
+  allow_implicit_invocation: true

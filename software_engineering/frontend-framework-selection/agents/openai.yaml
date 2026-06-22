@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Framework Selection"
+  short_description: "Choose the right frontend framework"
+  default_prompt: "Use $frontend-framework-selection to choose a frontend framework and rendering model based on product interaction needs, backend architecture, team fit, deployment constraints, and maintainability."
+
+policy:
+  allow_implicit_invocation: true
