@@ -32,7 +32,7 @@ Output a performance problem statement and target latency, throughput, or reliab
 
 ### 2. Trace The Request Path
 
-Use `$request-flow-tracing`.
+Use [`request-flow-tracing`](../../distributed_systems/request-flow-tracing/SKILL.md).
 
 Map browser, DNS, CDN, load balancer, app servers, APIs, workers, queues, caches, databases, and third-party calls for the slow workflow.
 
@@ -40,7 +40,7 @@ Output an end-to-end request and runtime flow.
 
 ### 3. Establish Runtime Evidence
 
-Use `$frontend-debugging` and `$backend-debugging`.
+Use [`frontend-debugging`](../../software_engineering/frontend-debugging/SKILL.md) and [`backend-debugging`](../../software_engineering/backend-debugging/SKILL.md).
 
 Reproduce the slow path and collect:
 
@@ -58,7 +58,7 @@ Output an evidence log and timing breakdown.
 
 ### 4. Identify System Resource Bottlenecks
 
-Use `$system-scaling-performance`.
+Use [`system-scaling-performance`](../../distributed_systems/system-scaling-performance/SKILL.md).
 
 Determine whether the system is:
 
@@ -79,17 +79,17 @@ Output bottleneck hypotheses ranked by evidence.
 
 ### 5. Analyze Database And Query Performance
 
-Use `$query-optimization`.
+Use [`query-optimization`](../../data_engineering/query-optimization/SKILL.md).
 
 Review slow queries, explain plans, indexes, joins, scans, cardinality, fan-out, N+1 patterns, document access patterns, vector search behavior, write amplification, and transaction contention.
 
-Use `$database-selection` if the current storage technology no longer fits the workload.
+Use [`database-selection`](../../data_engineering/database-selection/SKILL.md) if the current storage technology no longer fits the workload.
 
 Output query and datastore findings.
 
 ### 6. Review Data Model Fit
 
-Use `$data-modeling-first`.
+Use [`data-modeling-first`](../../data_engineering/data-modeling-first/SKILL.md).
 
 Check whether the data model matches current access patterns, lifecycle states, relationships, reporting needs, and source-of-truth boundaries.
 
@@ -97,7 +97,7 @@ Output data model bottlenecks or confirmation that the model is not the main iss
 
 ### 7. Review Client/Server And API Efficiency
 
-Use `$client-server-architecture` and `$api-design-best-practices`.
+Use [`client-server-architecture`](../../software_engineering/client-server-architecture/SKILL.md) and [`api-design-best-practices`](../../software_engineering/api-design-best-practices/SKILL.md).
 
 Look for:
 
@@ -115,7 +115,7 @@ Output API and boundary performance findings.
 
 ### 8. Assess Framework Or Runtime Constraints
 
-Use `$frontend-framework-selection` and `$backend-framework-selection` only if the framework, runtime, rendering model, or deployment shape appears to contribute to the bottleneck.
+Use [`frontend-framework-selection`](../../software_engineering/frontend-framework-selection/SKILL.md) and [`backend-framework-selection`](../../software_engineering/backend-framework-selection/SKILL.md) only if the framework, runtime, rendering model, or deployment shape appears to contribute to the bottleneck.
 
 Distinguish framework misuse from framework mismatch.
 
@@ -123,7 +123,7 @@ Output keep, tune, or revisit recommendations for framework choices.
 
 ### 9. Review Sync vs Async Processing
 
-Use `$sync-async-processing`.
+Use [`sync-async-processing`](../../distributed_systems/sync-async-processing/SKILL.md).
 
 Identify work that should leave the request path, such as:
 
@@ -140,7 +140,7 @@ Output a request-path reduction plan.
 
 ### 10. Consider Queues For Burst Smoothing
 
-Use `$queue-architecture-patterns`.
+Use [`queue-architecture-patterns`](../../distributed_systems/queue-architecture-patterns/SKILL.md).
 
 Consider queues when write traffic is bursty, processing is retry-prone, third-party rate limits apply, work can complete after the user response, or workers can process at a controlled rate.
 
@@ -148,7 +148,7 @@ Output a queue recommendation, worker model, retry/dead-letter plan, or explicit
 
 ### 11. Make Retries Safe
 
-Use `$idempotency-patterns`.
+Use [`idempotency-patterns`](../../distributed_systems/idempotency-patterns/SKILL.md).
 
 Ensure retries, queue jobs, imports, webhooks, scheduled tasks, and third-party calls are duplicate-safe.
 
@@ -156,7 +156,7 @@ Output an idempotency plan for scaling changes.
 
 ### 12. Evaluate Caching
 
-Use `$caching-patterns`.
+Use [`caching-patterns`](../../distributed_systems/caching-patterns/SKILL.md).
 
 Consider browser, CDN, app, distributed cache, database cache, read model, search index, materialized view, or pipeline cache layers.
 
@@ -172,7 +172,7 @@ Output a cache plan or explicit "not yet."
 
 ### 13. Evaluate Database Scaling Patterns
 
-Use `$primary-secondary-database-architecture`.
+Use [`primary-secondary-database-architecture`](../../data_engineering/primary-secondary-database-architecture/SKILL.md).
 
 Consider read replicas only after query, index, and data-model improvements are understood.
 
@@ -182,7 +182,7 @@ Output a primary/secondary recommendation or deferral.
 
 ### 14. Name Distributed Systems Tradeoffs
 
-Use `$cap-theorem-practical-design`.
+Use [`cap-theorem-practical-design`](../../distributed_systems/cap-theorem-practical-design/SKILL.md).
 
 For queues, caches, replicas, regions, async workflows, offline behavior, or third-party dependencies, identify consistency, availability, partition, freshness, and recovery tradeoffs.
 
@@ -190,7 +190,7 @@ Output failure-mode and consistency notes.
 
 ### 15. Review Deployment And Infrastructure Limits
 
-Use `$environment-management`, `$deployment-management`, and `$aws-web-app-deployment-defaults` if AWS is used.
+Use [`environment-management`](../../distributed_systems/environment-management/SKILL.md), [`deployment-management`](../../distributed_systems/deployment-management/SKILL.md), and [`aws-web-app-deployment-defaults`](../../distributed_systems/aws-web-app-deployment-defaults/SKILL.md) if AWS is used.
 
 Assess:
 
@@ -209,7 +209,7 @@ Output infrastructure scaling findings.
 
 ### 16. Review Observability
 
-Use `$observability-monitoring`.
+Use [`observability-monitoring`](../../distributed_systems/observability-monitoring/SKILL.md).
 
 Check whether logs, metrics, traces, dashboards, health checks, deploy markers, and alerts can prove where time and resources go.
 

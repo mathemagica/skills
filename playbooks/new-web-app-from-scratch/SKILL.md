@@ -32,7 +32,7 @@ Output a short product brief, assumptions, and open questions.
 
 ### 2. Start With The Data Model
 
-Use `$data-modeling-first`.
+Use [`data-modeling-first`](../../data_engineering/data-modeling-first/SKILL.md).
 
 Identify:
 
@@ -47,7 +47,7 @@ Output an initial conceptual data model and major domain objects.
 
 ### 3. Choose Storage
 
-Use `$database-selection`.
+Use [`database-selection`](../../data_engineering/database-selection/SKILL.md).
 
 Default to a relational database for standard transactional web apps unless the data shape, scale, latency, query pattern, or product requirement points elsewhere.
 
@@ -57,7 +57,7 @@ Output a datastore recommendation with tradeoffs and deferred storage decisions.
 
 ### 4. Choose Frontend Framework And Rendering Shape
 
-Use `$frontend-framework-selection`.
+Use [`frontend-framework-selection`](../../software_engineering/frontend-framework-selection/SKILL.md).
 
 Decide:
 
@@ -69,7 +69,7 @@ Output a frontend framework and rendering model recommendation with one reasonab
 
 ### 5. Choose Backend Framework And Server Shape
 
-Use `$backend-framework-selection`.
+Use [`backend-framework-selection`](../../software_engineering/backend-framework-selection/SKILL.md).
 
 Decide:
 
@@ -81,7 +81,7 @@ Output a backend framework and server architecture recommendation with one reaso
 
 ### 6. Define Client/Server Boundaries
 
-Use `$client-server-architecture`.
+Use [`client-server-architecture`](../../software_engineering/client-server-architecture/SKILL.md).
 
 Decide what belongs in:
 
@@ -97,7 +97,7 @@ Output a first system architecture sketch and responsibility map.
 
 ### 7. Design APIs
 
-Use `$api-design-best-practices`.
+Use [`api-design-best-practices`](../../software_engineering/api-design-best-practices/SKILL.md).
 
 Define:
 
@@ -113,7 +113,7 @@ Output an API contract outline.
 
 ### 8. Organize Server Code
 
-Use `$full-stack-server-organization`.
+Use [`full-stack-server-organization`](../../software_engineering/full-stack-server-organization/SKILL.md).
 
 Choose framework-native organization for:
 
@@ -131,7 +131,7 @@ Output the recommended backend structure and module boundaries.
 
 ### 9. Separate Responsibilities Early
 
-Use `$separation-of-concerns`.
+Use [`separation-of-concerns`](../../software_engineering/separation-of-concerns/SKILL.md).
 
 Keep UI, API handling, business rules, persistence, background work, integrations, and infrastructure concerns distinct enough that each can be tested and changed independently.
 
@@ -139,7 +139,7 @@ Output a responsibility map and the first boundaries worth preserving.
 
 ### 10. Decide Sync vs Async
 
-Use `$sync-async-processing`.
+Use [`sync-async-processing`](../../distributed_systems/sync-async-processing/SKILL.md).
 
 Keep simple reads and writes in the request path. Consider async workers, task schedulers, or queues for work that is slow, retry-prone, bursty, scheduled, dependency-heavy, or not required for the immediate user response.
 
@@ -147,7 +147,7 @@ Output a request-path versus worker-path decision list.
 
 ### 11. Add Queues Only When Needed
 
-Use `$queue-architecture-patterns` when the app needs background jobs, webhook handling, imports, email, media processing, rate-limit management, retries, delayed processing, or burst smoothing.
+Use [`queue-architecture-patterns`](../../distributed_systems/queue-architecture-patterns/SKILL.md) when the app needs background jobs, webhook handling, imports, email, media processing, rate-limit management, retries, delayed processing, or burst smoothing.
 
 If no queue is needed yet, say so explicitly and name the trigger that would change the decision.
 
@@ -155,7 +155,7 @@ Output a queue recommendation or a clear "not yet."
 
 ### 12. Make Risky Operations Idempotent
 
-Use `$idempotency-patterns`.
+Use [`idempotency-patterns`](../../distributed_systems/idempotency-patterns/SKILL.md).
 
 Apply idempotency to:
 
@@ -171,7 +171,7 @@ Output an idempotency key and retry-safety plan for relevant workflows.
 
 ### 13. Plan Caching Conservatively
 
-Use `$caching-patterns`.
+Use [`caching-patterns`](../../distributed_systems/caching-patterns/SKILL.md).
 
 Start with browser, CDN, static asset caching, and database indexes before adding application-level or distributed caches.
 
@@ -187,7 +187,7 @@ Output a cache plan or an explicit "not yet."
 
 ### 14. Plan Environments
 
-Use `$environment-management`.
+Use [`environment-management`](../../distributed_systems/environment-management/SKILL.md).
 
 Start with:
 
@@ -201,7 +201,7 @@ Output an environment map and promotion expectations.
 
 ### 15. Plan Deployment
 
-Use `$deployment-management`.
+Use [`deployment-management`](../../distributed_systems/deployment-management/SKILL.md).
 
 Define:
 
@@ -217,7 +217,7 @@ Output a deployment checklist suitable for the first production release.
 
 ### 16. Pick Cloud Defaults
 
-Use `$aws-web-app-deployment-defaults` if AWS is the target platform.
+Use [`aws-web-app-deployment-defaults`](../../distributed_systems/aws-web-app-deployment-defaults/SKILL.md) if AWS is the target platform.
 
 Choose conservative defaults for DNS, TLS, CDN, compute, database, IAM, secrets, logging, monitoring, backups, and least-privilege access.
 
@@ -225,7 +225,7 @@ Output an AWS baseline architecture when relevant.
 
 ### 17. Add Observability
 
-Use `$observability-monitoring`.
+Use [`observability-monitoring`](../../distributed_systems/observability-monitoring/SKILL.md).
 
 Define the minimum useful:
 
@@ -244,12 +244,12 @@ Output a minimum viable observability plan.
 
 Use these selectively:
 
-- `$multitenancy-architecture` for SaaS, B2B apps, tenant isolation, billing, or customer-specific permissions.
-- `$third-party-data-integration` for vendor APIs, CRMs, payments, calendars, warehouses, imported datasets, or external systems of record.
-- `$primary-secondary-database-architecture` for read scaling or high availability after query and index tuning.
-- `$cap-theorem-practical-design` when introducing distributed state, replicas, queues, caches, regions, offline behavior, or availability/consistency tradeoffs.
-- `$system-scaling-performance` when projecting or diagnosing throughput, CPU, memory, I/O, database pressure, queue depth, or request rate.
-- `$frontend-debugging` and `$backend-debugging` once implementation has behavior to inspect.
+- [`multitenancy-architecture`](../../distributed_systems/multitenancy-architecture/SKILL.md) for SaaS, B2B apps, tenant isolation, billing, or customer-specific permissions.
+- [`third-party-data-integration`](../../data_engineering/third-party-data-integration/SKILL.md) for vendor APIs, CRMs, payments, calendars, warehouses, imported datasets, or external systems of record.
+- [`primary-secondary-database-architecture`](../../data_engineering/primary-secondary-database-architecture/SKILL.md) for read scaling or high availability after query and index tuning.
+- [`cap-theorem-practical-design`](../../distributed_systems/cap-theorem-practical-design/SKILL.md) when introducing distributed state, replicas, queues, caches, regions, offline behavior, or availability/consistency tradeoffs.
+- [`system-scaling-performance`](../../distributed_systems/system-scaling-performance/SKILL.md) when projecting or diagnosing throughput, CPU, memory, I/O, database pressure, queue depth, or request rate.
+- [`frontend-debugging`](../../software_engineering/frontend-debugging/SKILL.md) and [`backend-debugging`](../../software_engineering/backend-debugging/SKILL.md) once implementation has behavior to inspect.
 
 ## Expected Output
 

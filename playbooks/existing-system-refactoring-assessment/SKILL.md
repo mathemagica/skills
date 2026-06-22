@@ -31,7 +31,7 @@ Output assessment scope, success criteria, assumptions, and open questions.
 
 ### 2. Map Request And Runtime Flow
 
-Use `$request-flow-tracing`.
+Use [`request-flow-tracing`](../../distributed_systems/request-flow-tracing/SKILL.md).
 
 Trace important workflows from browser or client through DNS, CDN, load balancer, app servers, APIs, queues, caches, databases, and third-party systems.
 
@@ -39,7 +39,7 @@ Output a current runtime map and workflow inventory.
 
 ### 3. Establish Debugging Evidence
 
-Use `$backend-debugging` and `$frontend-debugging` where relevant.
+Use [`backend-debugging`](../../software_engineering/backend-debugging/SKILL.md) and [`frontend-debugging`](../../software_engineering/frontend-debugging/SKILL.md) where relevant.
 
 Reproduce concrete issues, inspect runtime behavior, compare expected versus actual behavior, and separate symptoms from causes.
 
@@ -47,7 +47,7 @@ Output an evidence log for important defects, confusing behaviors, and suspected
 
 ### 4. Assess Responsibility Boundaries
 
-Use `$separation-of-concerns`.
+Use [`separation-of-concerns`](../../software_engineering/separation-of-concerns/SKILL.md).
 
 Identify mixed concerns such as:
 
@@ -62,7 +62,7 @@ Output a responsibility map and boundary problems.
 
 ### 5. Assess Server Organization
 
-Use `$full-stack-server-organization`.
+Use [`full-stack-server-organization`](../../software_engineering/full-stack-server-organization/SKILL.md).
 
 Review whether server code follows framework-native organization around routes, controllers/views, handlers, models, serializers, services, schemas, validators, jobs, and tests.
 
@@ -70,7 +70,7 @@ Output a server structure assessment and cleanup opportunities.
 
 ### 6. Assess Framework Fit
 
-Use `$frontend-framework-selection` and `$backend-framework-selection`.
+Use [`frontend-framework-selection`](../../software_engineering/frontend-framework-selection/SKILL.md) and [`backend-framework-selection`](../../software_engineering/backend-framework-selection/SKILL.md).
 
 Decide whether existing framework choices are still helping, merely unfamiliar, or actively creating maintenance, product, hiring, performance, or operational problems.
 
@@ -78,7 +78,7 @@ Output keep, change, or revisit recommendations for framework choices.
 
 ### 7. Review Client/Server Boundaries
 
-Use `$client-server-architecture`.
+Use [`client-server-architecture`](../../software_engineering/client-server-architecture/SKILL.md).
 
 Check whether state ownership, validation, authorization, caching, errors, retries, background work, secrets, and durable workflows sit on the right side of the boundary.
 
@@ -86,7 +86,7 @@ Output a client/server boundary assessment.
 
 ### 8. Review API Design
 
-Use `$api-design-best-practices`.
+Use [`api-design-best-practices`](../../software_engineering/api-design-best-practices/SKILL.md).
 
 Assess endpoint consistency, authentication, authorization, validation, pagination, filtering, versioning, idempotency, error shape, compatibility, and consumer coupling.
 
@@ -94,7 +94,7 @@ Output API risks and cleanup opportunities.
 
 ### 9. Review Data Model And Source Of Truth
 
-Use `$data-modeling-first`.
+Use [`data-modeling-first`](../../data_engineering/data-modeling-first/SKILL.md).
 
 Identify domain entities, relationships, lifecycle states, overloaded tables, missing constraints, duplicated records, unclear ownership, and mismatch between business workflows and persistence.
 
@@ -102,7 +102,7 @@ Output a data model and source-of-truth assessment.
 
 ### 10. Review Database Choice And Query Performance
 
-Use `$database-selection` and `$query-optimization`.
+Use [`database-selection`](../../data_engineering/database-selection/SKILL.md) and [`query-optimization`](../../data_engineering/query-optimization/SKILL.md).
 
 Check whether current storage choices fit the workload. Investigate slow paths with explain plans, indexes, access patterns, cardinality, fan-out, joins, scans, document access patterns, vector search constraints, or cache/search/warehouse misuse.
 
@@ -110,7 +110,7 @@ Output storage fit and query optimization findings.
 
 ### 11. Assess Scaling And Bottlenecks
 
-Use `$system-scaling-performance`.
+Use [`system-scaling-performance`](../../distributed_systems/system-scaling-performance/SKILL.md).
 
 Determine whether bottlenecks are CPU, memory, I/O, network, database, cache, queue, third-party, or request-rate related.
 
@@ -118,7 +118,7 @@ Output a measured bottleneck model and likely scaling limits.
 
 ### 12. Review Async Work, Queues, And Idempotency
 
-Use `$sync-async-processing`, `$queue-architecture-patterns`, and `$idempotency-patterns`.
+Use [`sync-async-processing`](../../distributed_systems/sync-async-processing/SKILL.md), [`queue-architecture-patterns`](../../distributed_systems/queue-architecture-patterns/SKILL.md), and [`idempotency-patterns`](../../distributed_systems/idempotency-patterns/SKILL.md).
 
 Identify work incorrectly happening in the request path, missing retries, unsafe retries, duplicate-processing risk, dead-letter queue gaps, and overcomplicated async flows.
 
@@ -126,7 +126,7 @@ Output an async processing and retry-safety assessment.
 
 ### 13. Review Caching
 
-Use `$caching-patterns`.
+Use [`caching-patterns`](../../distributed_systems/caching-patterns/SKILL.md).
 
 Identify whether caches solve a measured bottleneck, whether invalidation is safe, whether freshness expectations are clear, and whether cached data has an obvious source of truth.
 
@@ -134,7 +134,7 @@ Output cache risks and simplification opportunities.
 
 ### 14. Review Database Replication Patterns
 
-Use `$primary-secondary-database-architecture` if replicas, failover, read scaling, analytics replicas, or reporting copies exist or are being considered.
+Use [`primary-secondary-database-architecture`](../../data_engineering/primary-secondary-database-architecture/SKILL.md) if replicas, failover, read scaling, analytics replicas, or reporting copies exist or are being considered.
 
 Check read-after-write behavior, replica lag, failover runbooks, routing logic, and consistency expectations.
 
@@ -142,7 +142,7 @@ Output a replica safety assessment.
 
 ### 15. Review Distributed System Tradeoffs
 
-Use `$cap-theorem-practical-design`.
+Use [`cap-theorem-practical-design`](../../distributed_systems/cap-theorem-practical-design/SKILL.md).
 
 Name where consistency, availability, and partition-tolerance tradeoffs appear because of caches, queues, replicas, regions, offline behavior, or third-party dependencies.
 
@@ -150,7 +150,7 @@ Output consistency and failure-mode assessment.
 
 ### 16. Review Multitenancy
 
-Use `$multitenancy-architecture` if the product has customers, accounts, organizations, workspaces, teams, regions, or tenant-like boundaries.
+Use [`multitenancy-architecture`](../../distributed_systems/multitenancy-architecture/SKILL.md) if the product has customers, accounts, organizations, workspaces, teams, regions, or tenant-like boundaries.
 
 Assess tenant isolation, authorization, billing, support tooling, data lifecycle, noisy-neighbor risk, and migration complexity.
 
@@ -158,7 +158,7 @@ Output a tenant model assessment.
 
 ### 17. Review Third-Party Integrations
 
-Use `$third-party-data-integration`.
+Use [`third-party-data-integration`](../../data_engineering/third-party-data-integration/SKILL.md).
 
 Identify systems of record, external ID mapping, sync direction, reconciliation, freshness, retries, observability, rate limits, and failure handling.
 
@@ -166,7 +166,7 @@ Output integration risk assessment.
 
 ### 18. Review Environments And Deployment
 
-Use `$environment-management`, `$deployment-management`, and `$aws-web-app-deployment-defaults` if AWS is used.
+Use [`environment-management`](../../distributed_systems/environment-management/SKILL.md), [`deployment-management`](../../distributed_systems/deployment-management/SKILL.md), and [`aws-web-app-deployment-defaults`](../../distributed_systems/aws-web-app-deployment-defaults/SKILL.md) if AWS is used.
 
 Assess local/staging/production parity, environment-specific config, secrets, migrations, rollback, deployment safety, cloud defaults, IAM, network boundaries, backups, and disaster recovery.
 
@@ -174,7 +174,7 @@ Output release and environment risk assessment.
 
 ### 19. Review Observability
 
-Use `$observability-monitoring`.
+Use [`observability-monitoring`](../../distributed_systems/observability-monitoring/SKILL.md).
 
 Assess whether logs, metrics, traces, health checks, dashboards, deploy markers, and alerts answer the questions engineers ask during incidents, refactors, releases, and debugging sessions.
 
