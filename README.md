@@ -65,15 +65,15 @@ Use $data-modeling-first and $client-server-architecture to plan this new web ap
 ```
 
 ```text
-Use $new-web-app-from-scratch with the skills library at /Users/annlewis/projects/skills to plan this product before implementation.
+Use $new-web-app-from-scratch with the skills library at /path/to/skills to plan this product before implementation.
 ```
 
 ```text
-Use $existing-system-refactoring-assessment with the skills library at /Users/annlewis/projects/skills to assess this application before refactoring.
+Use $existing-system-refactoring-assessment with the skills library at /path/to/skills to assess this application before refactoring.
 ```
 
 ```text
-Use $system-performance-scaling-assessment with the skills library at /Users/annlewis/projects/skills to diagnose why this system is slow and create a scaling plan.
+Use $system-performance-scaling-assessment with the skills library at /path/to/skills to diagnose why this system is slow and create a scaling plan.
 ```
 
 You can combine skills when the task spans multiple layers. Prefer starting with the smallest set that matches the decision you are making.
@@ -164,7 +164,7 @@ Use $system-scaling-performance and $query-optimization to diagnose this slow da
 If the skills are not installed globally, point Codex at this repository or the specific `SKILL.md` file:
 
 ```text
-Use the skill in /Users/annlewis/projects/skills/distributed_systems/caching-patterns/SKILL.md to review this caching plan.
+Use the skill in /path/to/skills/distributed_systems/caching-patterns/SKILL.md to review this caching plan.
 ```
 
 Each skill also has `agents/openai.yaml` metadata for OpenAI/Codex-facing display names, descriptions, and default prompts.
