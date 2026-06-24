@@ -10,6 +10,9 @@ These skills are not application code, templates, or rigid checklists. They are 
 
 Use them when you want an agent to work more like a senior engineering collaborator: grounding recommendations in the codebase, naming tradeoffs, choosing simple defaults, sequencing work, and producing plans or code changes that can be reviewed.
 
+For the broader operating model behind this style of work, see
+[Harness Engineering](docs/harness-engineering.md).
+
 ## Contents
 
 ### Playbooks
