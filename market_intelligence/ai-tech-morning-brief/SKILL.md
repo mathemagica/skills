@@ -7,9 +7,11 @@ description: Create a daily AI and technology morning intelligence brief by scan
 
 ## Overview
 
-Create a concise morning brief that separates confirmed provider updates from practitioner/market signals, then translates both into things to try, track, ignore, or validate as business opportunities.
+Create a compact morning brief that separates confirmed provider updates from practitioner/market signals, then translates both into things to try, track, ignore, or validate as business opportunities.
 
 Optimize for decision usefulness, not completeness. Prefer primary sources for facts and practitioner sources for signals about adoption, pain, and emerging workflows.
+
+Default to a tight executive brief. If the user does not request a length, keep the output roughly half the length of a full research memo: compact bullets, no link dumps, no duplicated explanations across sections.
 
 ## Source Mix
 
@@ -47,7 +49,7 @@ Use these for signals, not unverified facts:
 - Label community, aggregator, launch, funding, and comment-thread items as signals.
 - Verify important claims from practitioner sources against a primary source when possible.
 - Do not overreport thin "AI for X" launches unless they reveal a repeated pain point, workflow, buyer, or category.
-- Include links for all material claims.
+- Include source links in every section when available, and link all material factual claims.
 - Favor recent changes, but include older items only when they explain today's trend or decision.
 
 ## Triage And Scoring
@@ -60,6 +62,7 @@ For each candidate item, ask:
 - Is it relevant to AI agents, coding, data engineering, RAG, MCP, open source models, deployments, observability, governance, or user's current workflows?
 - Is there a practical test that could be run in 30-60 minutes?
 - Is there a user pain point or startup category hiding behind it?
+- Is someone building an AI-native competitor to a legacy business, service firm, or vertical software category by using AI to lower costs, compress implementation time, or reach market faster?
 - Is it a high-confidence fact, a repeated practitioner signal, or a weak one-off?
 
 Prefer items with at least one of:
@@ -69,6 +72,7 @@ Prefer items with at least one of:
 - clear open source model/tool adoption signal
 - repeated user pain across communities
 - startup category formation
+- credible AI-native challengers to legacy businesses, especially where speed, labor cost, workflow automation, or implementation cost are the wedge
 - practical thing to try today
 - strategic fit with civic data, policy research, local government, public records, data integration, AI-assisted engineering, or evidence-backed workflows
 
@@ -141,6 +145,7 @@ Classify signals by:
 - pain: cost, reliability, evals, security, context, integrations, deployment, trust, latency, UX, governance
 - maturity: toy, prototype, internal tool, paid product, funded startup, enterprise category
 - opportunity type: product, service, integration, data moat, workflow automation, compliance layer, vertical SaaS, infrastructure
+- legacy displacement angle: what incumbent product, service provider, broker, consultancy, BPO, manual back office, or vertical software category the AI-native approach is trying to beat
 
 ### Business Strategy Opportunities
 
@@ -156,6 +161,20 @@ Evidence:
 How to validate cheaply:
 Strategic fit:
 ```
+
+Actively look for signals that founders or operators are building AI-native competitors to legacy businesses. Prioritize examples where AI changes the cost structure or go-to-market speed, such as:
+
+- replacing manual service delivery with agentic workflows
+- bypassing long integration projects by operating through browsers, files, email, or existing systems
+- turning consulting, compliance, brokerage, back-office, research, finance, insurance, care, or local-government workflows into software-plus-agent services
+- using lower labor cost, faster onboarding, audit trails, or source-backed receipts as the wedge against incumbents
+
+When this pattern appears, include:
+
+- incumbent being challenged
+- AI-native wedge
+- evidence source
+- cheapest validation step
 
 ### Provider Updates
 
@@ -196,6 +215,7 @@ Low-value signals:
 
 - Be concise but not cryptic.
 - Make clear what is fact versus signal.
-- Include primary links where possible.
+- Include source links in every section where available.
 - Do not turn the brief into a link dump.
+- Prefer one compact paragraph or 2-4 bullets per section.
 - End with a practical watch list or validation prompt, not generic encouragement.
