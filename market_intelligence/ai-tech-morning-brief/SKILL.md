@@ -7,7 +7,7 @@ description: Create a daily AI and technology morning intelligence brief by scan
 
 ## Overview
 
-Create a concise morning brief that separates confirmed provider updates from practitioner/market signals, then translates both into things Ann may want to try, track, ignore, or validate as business opportunities.
+Create a concise morning brief that separates confirmed provider updates from practitioner/market signals, then translates both into things to try, track, ignore, or validate as business opportunities.
 
 Optimize for decision usefulness, not completeness. Prefer primary sources for facts and practitioner sources for signals about adoption, pain, and emerging workflows.
 
@@ -57,8 +57,8 @@ For each candidate item, ask:
 - What changed?
 - Who is affected?
 - Is this available now or only announced?
-- Is it relevant to AI agents, coding, data engineering, RAG, MCP, open source models, deployments, observability, governance, or GroundVue-like workflows?
-- Is there a practical test Ann could run in 30-60 minutes?
+- Is it relevant to AI agents, coding, data engineering, RAG, MCP, open source models, deployments, observability, governance, or user's current workflows?
+- Is there a practical test that could be run in 30-60 minutes?
 - Is there a user pain point or startup category hiding behind it?
 - Is it a high-confidence fact, a repeated practitioner signal, or a weak one-off?
 
@@ -83,7 +83,7 @@ Top 3 Things To Know
 
 New Things To Try / Test / Play With
 
-Actionable For Ann / GroundVue
+Actionable 
 
 Practitioner And Market Signals
 - What People Are Building
@@ -118,7 +118,7 @@ Include 2-5 concrete experiments. For each:
 - note time cost when helpful
 - avoid anything that requires production credentials or sensitive data unless explicitly requested
 
-### Actionable For Ann / GroundVue
+### Actionable 
 
 Group into:
 
@@ -154,7 +154,7 @@ Why current tools fall short:
 What a better product/service might look like:
 Evidence:
 How to validate cheaply:
-Strategic fit for Ann/GroundVue:
+Strategic fit:
 ```
 
 ### Provider Updates
