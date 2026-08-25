@@ -1,8 +1,6 @@
 ---
 name: frontend-framework-selection
 description: Choose an appropriate frontend framework or rendering approach for a web application based on product requirements, interactivity, routing, data fetching, rendering model, team experience, ecosystem maturity, deployment constraints, performance, accessibility, and long-term maintainability.
-when_to_use: Use when starting a new web app, dashboard, internal tool, marketing site, SaaS app, admin UI, customer portal, or when deciding between React, Next.js, Vue, Nuxt, Svelte, SvelteKit, Angular, Remix, Astro, HTMX, server-rendered templates, a single-page app, or another frontend approach.
-argument-hint: "[web-app-or-frontend-decision]"
 ---
 
 # Frontend Framework Selection

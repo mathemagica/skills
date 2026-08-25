@@ -1,8 +1,6 @@
 ---
 name: separation-of-concerns
 description: Design, write, review, or refactor code so responsibilities such as routing, validation, business logic, persistence, formatting, configuration, observability, and external integrations stay separated behind the smallest useful boundaries.
-when_to_use: Use when designing new code, writing a feature, reviewing existing code, or refactoring code where responsibilities may be mixed across routing, validation, business logic, persistence, formatting, configuration, observability, or external integrations.
-argument-hint: "[feature-or-file-or-module]"
 ---
 
 # Separation Of Concerns

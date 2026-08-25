@@ -1,8 +1,6 @@
 ---
 name: sync-async-processing
 description: Design, evaluate, or debug synchronous vs asynchronous processing in web apps and distributed systems, including what sync/async mean, when work belongs in the web request path versus background workers, task schedulers, queues, cron jobs, event handlers, webhooks, and simple starting advice for new web apps.
-when_to_use: Use when deciding whether code should run during a web request or in an async/background process, designing workers or scheduled jobs, handling slow side effects, smoothing bursty work, improving response latency, or explaining synchronous versus asynchronous architecture tradeoffs.
-argument-hint: "[workflow-or-operation]"
 ---
 
 # Sync Async Processing

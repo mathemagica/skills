@@ -1,8 +1,6 @@
 ---
 name: queue-architecture-patterns
 description: Design, evaluate, or debug queue-based architecture in distributed systems, including what queues are, where they fit, asynchronous processing, burst smoothing, write buffering, workers, retries, dead-letter queues, idempotency, ordering, backpressure, and integration with databases, APIs, web apps, pipelines, and third-party services.
-when_to_use: Use when deciding whether to add a queue, designing background processing, smoothing bursty writes, decoupling services, handling retries, integrating workers, or debugging queue lag, duplicate processing, ordering, or dead-letter failures.
-argument-hint: "[workflow-or-system-component]"
 ---
 
 # Queue Architecture Patterns

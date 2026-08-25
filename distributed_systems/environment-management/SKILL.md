@@ -1,8 +1,6 @@
 ---
 name: environment-management
 description: Design, manage, review, or debug software deployment environments such as local, staging, production, preview, QA, pre-production, sandbox, and disaster recovery; define the simplest starting setup, when to add environments, promotion flow, environment-specific config, data, access, testing, release gates, and operational tradeoffs.
-when_to_use: Use when planning or reviewing deployment environments, deciding how many environments a web app needs, managing environment-specific config, deciding whether staging/pre-production/QA/preview environments are needed, debugging environment-specific bugs, or explaining how production-like environments should work.
-argument-hint: "[system-or-release-process]"
 ---
 
 # Environment Management

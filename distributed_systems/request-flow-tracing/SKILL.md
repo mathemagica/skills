@@ -1,8 +1,6 @@
 ---
 name: request-flow-tracing
 description: Explain, trace, design, or debug how a user request flows through a distributed web system from browser to DNS, CDN/edge cache, TLS, load balancer, reverse proxy, application servers, caches, queues, databases, external services, and back to the browser.
-when_to_use: Use when explaining how a web request works end-to-end, debugging request failures or latency, designing a web system, onboarding engineers to system architecture, or tracing where a bug occurs between browser, network, edge, servers, and database.
-argument-hint: "[url-or-endpoint-or-system]"
 ---
 
 # Request Flow Tracing

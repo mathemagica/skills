@@ -1,8 +1,6 @@
 ---
 name: cap-theorem-practical-design
 description: Apply the CAP theorem practically when designing, implementing, scaling, operating, or recovering distributed systems; reason about consistency, availability, partition tolerance, failure modes, data replication, queues, caches, databases, read replicas, conflict resolution, viral traffic events, and user/business tradeoffs.
-when_to_use: Use when making distributed system design choices involving consistency vs availability, network partitions, replicas, failover, multi-region architecture, distributed databases, caches, queues, stale reads, split-brain risk, conflict resolution, organic scaling events, or recovery after partial failures.
-argument-hint: "[system-or-design-decision]"
 ---
 
 # CAP Theorem Practical Design

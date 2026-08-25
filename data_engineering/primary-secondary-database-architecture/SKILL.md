@@ -1,8 +1,6 @@
 ---
 name: primary-secondary-database-architecture
 description: Design, evaluate, or debug primary/secondary database architectures, including primary writes, secondary reads, replication lag, failover, read scaling, consistency tradeoffs, read replicas, follower nodes, standby databases, and operational risks.
-when_to_use: Use when deciding whether to add read replicas, scale database reads, separate read/write traffic, improve availability, design failover, or explain primary/secondary replication patterns in relational, document, search, cache, or distributed data systems.
-argument-hint: "[database-or-workload]"
 ---
 
 # Primary Secondary Database Architecture

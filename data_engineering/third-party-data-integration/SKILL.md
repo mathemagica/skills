@@ -1,8 +1,6 @@
 ---
 name: third-party-data-integration
 description: Design, review, or debug third-party data integrations, including API pulls, webhooks, batch imports, data pipelines, sync jobs, source-of-truth ownership, external ID mapping, reconciliation, idempotency, freshness, validation, rate limits, retries, observability, and safe integration with key domain tables.
-when_to_use: Use when integrating data from external APIs, partner systems, SaaS tools, vendors, data feeds, files, warehouses, CRMs, payment providers, calendars, product catalogs, identity providers, or other third-party systems into an application or data platform.
-argument-hint: "[integration-or-source-system]"
 ---
 
 # Third Party Data Integration

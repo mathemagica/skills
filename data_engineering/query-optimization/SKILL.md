@@ -1,8 +1,6 @@
 ---
 name: query-optimization
 description: Diagnose and improve slow queries across relational, document, key-value, search, analytical, graph, time-series, and vector databases by identifying the current database choice, reading the relevant query plan or profiling output, reasoning about complexity and access patterns, and choosing safe optimization paths with clear tradeoffs.
-when_to_use: Use when someone reports a slow query, endpoint, report, dashboard, search, retrieval, ORM call, aggregation, or database-backed workflow, especially when the right diagnostic method depends on the database type.
-argument-hint: "[query-or-endpoint-or-workload]"
 ---
 
 # Query Optimization

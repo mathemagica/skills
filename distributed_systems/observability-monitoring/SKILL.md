@@ -1,8 +1,6 @@
 ---
 name: observability-monitoring
 description: Design, review, or debug observability for applications and distributed systems, including monitoring, alerting, logging, metrics, traces, instrumentation, dashboards, SLOs, health checks, incident signals, and practical starting defaults for web apps and backend services.
-when_to_use: Use when adding monitoring, designing alarms, instrumenting code, improving logs, choosing metrics/traces, debugging production issues, reviewing operational readiness, creating dashboards, or deciding what signals a web app, API, worker, queue, database, or integration should expose.
-argument-hint: "[system-or-service]"
 ---
 
 # Observability Monitoring

@@ -1,8 +1,6 @@
 ---
 name: aws-web-app-deployment-defaults
 description: Design, review, or implement default AWS deployment architecture for web apps using secure, scalable, observable, cost-aware patterns across DNS, CDN, TLS, load balancing, compute, databases, storage, secrets, IAM, CI/CD, monitoring, and rollback.
-when_to_use: Use when deploying a new web app to AWS, reviewing AWS deployment architecture, choosing default AWS services, hardening an existing deployment, or explaining recommended production/staging setup for a web application.
-argument-hint: "[app-or-environment]"
 ---
 
 # AWS Web App Deployment Defaults

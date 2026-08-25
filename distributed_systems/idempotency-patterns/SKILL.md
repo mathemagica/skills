@@ -1,8 +1,6 @@
 ---
 name: idempotency-patterns
 description: Design, review, or debug idempotent behavior in distributed systems, including web apps, APIs, data pipelines, backend jobs, queues, retries, webhooks, payments, imports, exports, and third-party integrations.
-when_to_use: Use when a system operation may be retried, duplicated, replayed, timed out, partially completed, delivered more than once, or called by unreliable clients, queues, workers, schedulers, webhooks, or third-party APIs.
-argument-hint: "[operation-or-workflow]"
 ---
 
 # Idempotency Patterns

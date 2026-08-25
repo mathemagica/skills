@@ -1,8 +1,6 @@
 ---
 name: existing-system-refactoring-assessment
 description: Coordinate the skills library to assess an existing application or system for refactoring, cleanup, modernization, or rearchitecture by understanding runtime behavior, request flow, architecture, code organization, data model, APIs, performance, observability, deployment, integrations, and operational risk before recommending changes.
-when_to_use: Use when reviewing an existing application for cleanup, refactoring, modernization, rearchitecture, legacy system assessment, developer-velocity issues, scaling problems, operational risk, or when the user wants the agent to find and use all relevant skills before changing production code.
-argument-hint: "[application-or-system]"
 ---
 
 # Existing System Refactoring Assessment

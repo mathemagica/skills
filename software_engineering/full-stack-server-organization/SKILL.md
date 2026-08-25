@@ -1,8 +1,6 @@
 ---
 name: full-stack-server-organization
 description: Design, write, review, or refactor server-side code in full-stack web frameworks using MVC, MVW, MTV, CRUD/resource APIs, service layers, repositories, serializers, validators, middleware, and framework-native organization patterns.
-when_to_use: Use when creating or reorganizing server code in Rails, Django, Laravel, Spring, ASP.NET, Express, FastAPI, Flask, Phoenix, NestJS, or similar full-stack/backend web frameworks.
-argument-hint: "[framework-or-feature-or-module]"
 ---
 
 # Full Stack Server Organization

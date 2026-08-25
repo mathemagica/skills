@@ -1,8 +1,6 @@
 ---
 name: database-selection
 description: Choose an appropriate database for a system or data workload by comparing relational, document-oriented, key-value, wide-column, graph, time-series, search, analytical, object storage, and vector databases; explain tradeoffs, fit, risks, and migration paths.
-when_to_use: Use when designing a new system, choosing persistence for a feature, evaluating relational vs document databases, deciding whether a vector database is needed, or explaining database tradeoffs for application, analytics, search, or AI/RAG workloads.
-argument-hint: "[system-or-workload]"
 ---
 
 # Database Selection

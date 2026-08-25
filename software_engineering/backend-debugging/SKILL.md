@@ -1,8 +1,6 @@
 ---
 name: backend-debugging
 description: Debug backend code using scientific-method diagnosis, one-variable-at-a-time experiments, server logs, traces, tests, debuggers, breakpoints, runtime state inspection, database/API observation, and clear frontend/backend execution boundaries.
-when_to_use: Use when diagnosing backend bugs, API failures, server errors, data bugs, job failures, integration issues, auth problems, concurrency bugs, request handling issues, or uncertainty about whether code executes on the frontend or backend.
-argument-hint: "[endpoint-or-service-or-bug]"
 ---
 
 # Backend Debugging

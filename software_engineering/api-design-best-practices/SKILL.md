@@ -1,8 +1,6 @@
 ---
 name: api-design-best-practices
 description: Design, review, or refactor APIs using clear resource/operation boundaries, request and response contracts, HTTP semantics, validation, authentication, authorization, pagination, filtering, idempotency, versioning, error handling, documentation, testing, and backward compatibility.
-when_to_use: Use when creating a new API, changing an existing API contract, designing REST/RPC/GraphQL endpoints, reviewing backend routes, defining client-server contracts, or diagnosing API usability, consistency, compatibility, or security issues.
-argument-hint: "[api-or-endpoint-or-feature]"
 ---
 
 # API Design Best Practices

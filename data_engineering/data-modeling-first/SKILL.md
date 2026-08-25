@@ -1,8 +1,6 @@
 ---
 name: data-modeling-first
 description: Design new projects from the data model first by identifying business use cases, user interactions, core entities, relationships, events, constraints, lifecycle states, ownership, and access patterns before implementation.
-when_to_use: Use when planning a new product, feature, service, data pipeline, API, database schema, analytics workflow, or full-stack application where the data model should shape the system design.
-argument-hint: "[project-or-feature]"
 ---
 
 # Data Modeling First

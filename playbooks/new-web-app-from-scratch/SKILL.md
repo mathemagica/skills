@@ -1,8 +1,6 @@
 ---
 name: new-web-app-from-scratch
 description: Coordinate the skills library to plan and build a new web application from scratch, moving from product concept through data modeling, datastore choice, frontend and backend framework selection, client-server architecture, API design, server organization, deployment, observability, and selective use of distributed systems patterns.
-when_to_use: Use when starting a new web app, SaaS app, internal tool, dashboard, portal, marketplace, or full-stack product, especially when the user wants the agent to find and use all relevant engineering skills in the right order before or during implementation.
-argument-hint: "[product-idea-or-web-app]"
 ---
 
 # New Web App From Scratch

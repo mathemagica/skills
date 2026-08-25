@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Tech Morning Brief"
+  short_description: "Daily AI, tools, and market radar"
+  default_prompt: "Use $ai-tech-morning-brief to create today's AI and technology morning brief with practitioner and market signals."

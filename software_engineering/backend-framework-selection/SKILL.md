@@ -1,8 +1,6 @@
 ---
 name: backend-framework-selection
 description: Choose an appropriate backend framework or server architecture for a web application based on product requirements, API style, data model, team experience, language ecosystem, performance needs, deployment constraints, operational maturity, integrations, background work, and long-term maintainability.
-when_to_use: Use when starting a new web app, SaaS app, internal tool, API service, admin system, dashboard backend, full-stack product, or when deciding between Django, FastAPI, Flask, Rails, Laravel, Express, NestJS, Spring Boot, ASP.NET Core, Go services, Phoenix, serverless functions, a monolith, modular monolith, backend-for-frontend, or microservices.
-argument-hint: "[web-app-or-backend-decision]"
 ---
 
 # Backend Framework Selection

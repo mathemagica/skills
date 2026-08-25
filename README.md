@@ -1,8 +1,8 @@
-# Software Engineering Skills
+# Software Architecture Judgment Library
 
 ## What These Skills Are For
 
-This repository is a reusable engineering skill library for AI coding agents such as Codex and Claude Code. The skills give an agent durable, task-specific engineering judgment it can apply while planning, building, reviewing, debugging, integrating, deploying, or operating software systems.
+This repository is a reusable software architecture judgment library for AI coding agents such as Codex and Claude Code. The skills give an agent durable, task-specific engineering judgment it can apply while planning, building, reviewing, debugging, integrating, deploying, or operating software systems.
 
 Each skill is a small, portable instruction package built around a `SKILL.md` file, with optional platform metadata in files such as `agents/openai.yaml`. A skill tells the agent when to use a pattern, what questions to ask, what tradeoffs to consider, what evidence to gather, and what kind of output to produce. Playbooks combine multiple skills into larger workflows, such as building a new web app, assessing an existing system for refactoring, or diagnosing performance bottlenecks.
 
@@ -12,6 +12,17 @@ Use them when you want an agent to work more like a senior engineering collabora
 
 For the broader operating model behind this style of work, see
 [Harness Engineering](docs/harness-engineering.md).
+
+## Skill Families
+
+The library is organized around the kinds of judgment an agent needs while doing software engineering work:
+
+- **Foundation skills** define durable boundaries and contracts: data modeling, separation of concerns, client/server architecture, and API design.
+- **Choice skills** help choose frameworks, databases, and deployment defaults without overbuilding.
+- **Operational skills** cover debugging, environments, deployment, observability, and production change safety.
+- **Scaling and distributed systems skills** help reason from measured bottlenecks toward caches, queues, async processing, replication, idempotency, and CAP tradeoffs.
+- **Playbooks** compose multiple skills into larger workflows so the agent can select and sequence the right skills instead of applying one pattern in isolation.
+- **Market intelligence skills** support recurring external scanning workflows that inform product, technical, and business strategy.
 
 ## Contents
 
@@ -55,11 +66,28 @@ For the broader operating model behind this style of work, see
 - `aws-web-app-deployment-defaults`: choose secure, scalable AWS defaults for web apps.
 - `observability-monitoring`: design useful logs, metrics, traces, dashboards, health checks, and alerts.
 
+### Market Intelligence
+
+- `ai-tech-morning-brief`: scan AI and technology provider updates, release notes, open source model/tool news, practitioner communities, startup signals, and user pain points to produce a concise morning brief with things to try and business opportunity patterns.
+
 ## How To Use These Skills
 
 Use skills by naming them explicitly in your prompt, usually with `$skill-name`.
 
 Use playbooks when you want the agent to select and sequence multiple skills for a larger engineering scenario.
+
+## Skill Selection Guide
+
+| If you are... | Start with... | Add when needed... |
+| --- | --- | --- |
+| Building a new web app | `$new-web-app-from-scratch` | `$data-modeling-first`, `$database-selection`, `$client-server-architecture`, `$api-design-best-practices` |
+| Assessing an existing app | `$existing-system-refactoring-assessment` | `$request-flow-tracing`, `$separation-of-concerns`, `$full-stack-server-organization`, `$observability-monitoring` |
+| Diagnosing slowness | `$system-performance-scaling-assessment` | `$query-optimization`, `$caching-patterns`, `$queue-architecture-patterns`, `$sync-async-processing` |
+| Designing an integration | `$third-party-data-integration` | `$idempotency-patterns`, `$sync-async-processing`, `$queue-architecture-patterns`, `$observability-monitoring` |
+| Choosing storage | `$database-selection` | `$data-modeling-first`, `$query-optimization`, `$primary-secondary-database-architecture` |
+| Planning deployment | `$environment-management` | `$deployment-management`, `$aws-web-app-deployment-defaults`, `$observability-monitoring` |
+| Reviewing architecture tradeoffs | `$client-server-architecture` | `$api-design-best-practices`, `$cap-theorem-practical-design`, `$multitenancy-architecture` |
+| Tracking AI/tech market signals | `$ai-tech-morning-brief` | Use official provider sources for facts and practitioner sources for signals |
 
 Example:
 
@@ -174,12 +202,12 @@ Each skill also has `agents/openai.yaml` metadata for OpenAI/Codex-facing displa
 
 ## Using With Claude Code
 
-Claude Code can use skills that follow the `SKILL.md` format with YAML frontmatter. These skills include Claude-friendly metadata such as:
+Claude Code can use skills that follow the `SKILL.md` format with YAML frontmatter. For cross-platform compatibility, these skills keep `SKILL.md` frontmatter minimal:
 
 - `name`
 - `description`
-- `when_to_use`
-- `argument-hint`
+
+Use the `description`, the skill body, and [CLAUDE.md](CLAUDE.md) as the Claude-facing discovery layer instead of adding platform-specific frontmatter keys that current Codex validation rejects.
 
 To use them with Claude Code, copy or symlink skill folders into a Claude skills directory, such as:
 
@@ -203,7 +231,7 @@ Use $deployment-management to plan this release.
 Use $third-party-data-integration to design the HubSpot sync.
 ```
 
-Claude can also discover skills by their `description` and `when_to_use` metadata, but explicit invocation is best when you want a specific workflow.
+Claude can also discover skills from their `description` metadata and from this repository index, but explicit invocation is best when you want a specific workflow.
 
 ## Skill Composition
 

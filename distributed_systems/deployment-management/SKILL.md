@@ -1,8 +1,6 @@
 ---
 name: deployment-management
 description: Plan, review, or debug deployment management for applications, including release promotion, build artifacts, environment variables, secrets, config, migrations, rollout strategies, rollback, CI/CD pipelines, deployment verification, monitoring, and production change safety.
-when_to_use: Use when deploying an application, designing CI/CD, managing environment variables or secrets, planning release promotion, debugging deployment failures, coordinating database migrations, choosing rollout/rollback strategy, or reviewing production deployment safety.
-argument-hint: "[app-or-release]"
 ---
 
 # Deployment Management

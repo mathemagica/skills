@@ -1,6 +1,8 @@
-# Skills Library
+# Software Architecture Judgment Library
 
-This directory is a library of reusable engineering skills. Each skill lives in its own folder with a `SKILL.md` file containing YAML frontmatter and workflow instructions.
+This directory is a reusable software architecture judgment library for AI coding agents. The skills help an agent plan, build, review, debug, integrate, deploy, operate, and reason about software systems with durable engineering judgment.
+
+Each skill lives in its own folder with a `SKILL.md` file containing minimal YAML frontmatter and workflow instructions. Keep `SKILL.md` frontmatter portable: use `name` and `description` for discovery, and put platform-specific invocation hints in this index or tool-specific metadata files.
 
 ## Structure
 
@@ -10,11 +12,12 @@ skills/
   software_engineering/
   data_engineering/
   distributed_systems/
+  market_intelligence/
 ```
 
 ## How To Use Skills
 
-When asked to help with an engineering task, read the relevant `SKILL.md` file(s) and follow their workflow. Prefer explicit skill invocation over guessing.
+When asked to help with an engineering task, read the relevant `SKILL.md` file(s) and follow their workflow. Prefer explicit skill invocation or playbook selection over guessing.
 
 To use a skill, read its `SKILL.md` and apply it to the task at hand:
 
@@ -27,6 +30,19 @@ To use a playbook (which coordinates multiple skills):
 ```
 Read skills/playbooks/new-web-app-from-scratch/SKILL.md and follow it for this product.
 ```
+
+## Skill Selection Guide
+
+| If you are... | Start with... | Add when needed... |
+| --- | --- | --- |
+| Building a new web app | `playbooks/new-web-app-from-scratch/SKILL.md` | data modeling, database selection, client/server architecture, API design |
+| Assessing an existing app | `playbooks/existing-system-refactoring-assessment/SKILL.md` | request tracing, separation of concerns, server organization, observability |
+| Diagnosing slowness | `playbooks/system-performance-scaling-assessment/SKILL.md` | query optimization, caching, queues, sync/async processing |
+| Designing an integration | `data_engineering/third-party-data-integration/SKILL.md` | idempotency, sync/async processing, queues, observability |
+| Choosing storage | `data_engineering/database-selection/SKILL.md` | data modeling, query optimization, primary/secondary database architecture |
+| Planning deployment | `distributed_systems/environment-management/SKILL.md` | deployment management, AWS defaults, observability |
+| Reviewing architecture tradeoffs | `software_engineering/client-server-architecture/SKILL.md` | API design, CAP tradeoffs, multitenancy |
+| Tracking AI/tech market signals | `market_intelligence/ai-tech-morning-brief/SKILL.md` | official provider facts plus practitioner/user signals |
 
 ## Available Skills
 
@@ -77,6 +93,12 @@ Read skills/playbooks/new-web-app-from-scratch/SKILL.md and follow it for this p
 | deployment-management | `distributed_systems/deployment-management/SKILL.md` | Deploying safely with rollout and rollback |
 | aws-web-app-deployment-defaults | `distributed_systems/aws-web-app-deployment-defaults/SKILL.md` | Choosing secure AWS defaults for web apps |
 | observability-monitoring | `distributed_systems/observability-monitoring/SKILL.md` | Designing logs, metrics, traces, and alerts |
+
+### Market Intelligence
+
+| Skill | Path | When To Use |
+|-------|------|-------------|
+| ai-tech-morning-brief | `market_intelligence/ai-tech-morning-brief/SKILL.md` | Creating an AI/tech morning brief with provider updates, open source news, practitioner signals, and market opportunities |
 
 ## Skill Composition
 

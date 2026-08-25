@@ -1,8 +1,6 @@
 ---
 name: multitenancy-architecture
 description: Design, evaluate, or review multitenant application architecture, including tenant isolation models, shared vs dedicated infrastructure, data modeling, authorization, onboarding, billing, observability, security, compliance, operational costs, and product/business tradeoffs.
-when_to_use: Use when building SaaS, B2B, enterprise, white-label, partner, marketplace, agency, internal platform, or multi-customer systems where one application serves multiple organizations, accounts, customers, workspaces, or environments.
-argument-hint: "[product-or-system]"
 ---
 
 # Multitenancy Architecture

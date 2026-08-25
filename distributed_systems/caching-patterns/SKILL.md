@@ -1,8 +1,6 @@
 ---
 name: caching-patterns
 description: Design, evaluate, or debug caching across an application stack, including simple web-app defaults, browser caching, CDN/edge caching, API caching, application memory, distributed cache, database/query caching, read models, search/vector indexes, data pipeline caches, cache keys, TTLs, freshness, security, observability, and common pitfalls.
-when_to_use: Use when deciding whether to add caching, choosing simple web-app caching defaults, improving latency or cost, reducing repeated reads/computation, protecting downstream systems, debugging stale data, designing cache keys, choosing TTLs, or reviewing caching at any layer of a web app, backend service, data pipeline, or distributed system.
-argument-hint: "[workflow-or-system-component]"
 ---
 
 # Caching Patterns

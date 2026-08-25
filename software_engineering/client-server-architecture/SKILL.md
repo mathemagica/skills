@@ -1,8 +1,6 @@
 ---
 name: client-server-architecture
 description: Design new systems or system components using standard client-server architecture patterns, including clear client/server responsibilities, API boundaries, data flow, authentication, state ownership, error handling, caching, and deployment/runtime concerns.
-when_to_use: Use when creating a new application, service, feature, API, frontend/backend boundary, integration, or system component that needs a clear client-server architecture.
-argument-hint: "[system-or-component]"
 ---
 
 # Client Server Architecture

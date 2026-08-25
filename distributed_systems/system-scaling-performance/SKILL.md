@@ -1,8 +1,6 @@
 ---
 name: system-scaling-performance
 description: Analyze and improve system scaling and performance by identifying CPU, memory, I/O, network, database, and request-rate bottlenecks; use Big-O reasoning, resource profiling, request-category read/write rates, caching, memoization, batching, concurrency controls, and architectural scaling options.
-when_to_use: Use when designing, reviewing, or debugging a system that may be slow, resource-bound, overloaded, expensive, memory-heavy, CPU-heavy, I/O-heavy, or difficult to scale under increasing request volume.
-argument-hint: "[system-or-endpoint-or-workload]"
 ---
 
 # System Scaling Performance

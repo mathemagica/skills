@@ -1,8 +1,6 @@
 ---
 name: system-performance-scaling-assessment
 description: Coordinate the skills library to assess an existing application or system that is slow, identify bottlenecks with evidence, and create a practical scaling plan across request tracing, debugging, query optimization, resource analysis, caching, queues, async processing, database architecture, deployment, observability, and distributed systems tradeoffs.
-when_to_use: Use when diagnosing a slow application, API, dashboard, background job, integration, or user workflow; when identifying CPU, memory, I/O, database, network, queue, cache, dependency, concurrency, or request-rate bottlenecks; or when creating a scaling plan for growth, burst traffic, larger datasets, or an organic scaling event.
-argument-hint: "[slow-system-or-workflow]"
 ---
 
 # System Performance Scaling Assessment

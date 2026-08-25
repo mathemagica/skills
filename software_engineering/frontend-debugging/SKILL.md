@@ -1,8 +1,6 @@
 ---
 name: frontend-debugging
 description: Debug frontend applications using systematic reproduction, browser DevTools, JavaScript/TypeScript debuggers, console traces, network inspection, DOM/CSS inspection, state inspection, performance profiling, source maps, and framework-specific tools.
-when_to_use: Use when diagnosing frontend bugs, broken UI behavior, rendering issues, JavaScript errors, failed network requests, state bugs, CSS/layout problems, performance issues, hydration bugs, or browser-specific behavior.
-argument-hint: "[page-or-component-or-bug]"
 ---
 
 # Frontend Debugging
