@@ -74,7 +74,7 @@ Prefer items with at least one of:
 - startup category formation
 - credible AI-native challengers to legacy businesses, especially where speed, labor cost, workflow automation, or implementation cost are the wedge
 - practical thing to try today
-- strategic fit with civic data, policy research, local government, public records, data integration, AI-assisted engineering, or evidence-backed workflows
+- strategic fit with the user's current priorities, workflows, portfolio, company, or recurring decision areas
 
 ## Brief Structure
 
@@ -134,6 +134,8 @@ Group into:
 
 Only include categories that have useful content.
 
+Keep this section broadly actionable for the user. Do not frame it only around one company, project, or product unless the user explicitly asks for that context in the current run.
+
 ### Practitioner And Market Signals
 
 Use this section to capture what builders, users, startups, and operators appear to be doing.
@@ -159,7 +161,7 @@ Why current tools fall short:
 What a better product/service might look like:
 Evidence:
 How to validate cheaply:
-Strategic fit:
+Strategic fit for the user:
 ```
 
 Actively look for signals that founders or operators are building AI-native competitors to legacy businesses. Prioritize examples where AI changes the cost structure or go-to-market speed, such as:
