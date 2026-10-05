@@ -41,7 +41,51 @@ Use these for signals, not unverified facts:
 - GitHub Trending, GitHub Discussions, popular issue threads
 - Hugging Face community posts and daily papers
 - Builder/operator blogs: Simon Willison, Latent Space, Chip Huyen, Eugene Yan, The Batch, Import AI, AI Engineer, Ben's Bites
+- AI/operator thought leaders with deep practitioner signal: Steve Yegge / yegge.ai / Steve Yegge on Medium, Gene Kim, Gergely Orosz / The Pragmatic Engineer, swyx / Latent Space, Simon Willison, Chip Huyen, Eugene Yan, Ethan Mollick, Benedict Evans, Ben Thompson / Stratechery, Andrej Karpathy, Jeremy Howard, Hamel Husain, Shreya Shankar, Jason Liu, Nathan Lambert, Sebastian Raschka, Percy Liang / Stanford HAI, Sarah Guo / Conviction, Elad Gil, and a16z AI infrastructure writing
 - Startup and investor signals: YC launches, a16z, Sequoia, Greylock, Bessemer, Index, Lightspeed, TechCrunch, The Information, Crunchbase-style funding notices when available
+- AI conference and event sources: official conference sites, CFP/speaker pages, registration pages, Luma/Eventbrite/Meetup listings when official pages are unavailable, AI Engineer, NeurIPS, ICML, ICLR, KDD, ACL/EMNLP, COLM, MLSys, ODSC, Applied AI Conference, VB Transform, HumanX, TED AI, SXSW AI tracks, SaaStr AI events, Cerebral Valley/Newcomer events, SF/NYC/Boston/DC AI builder meetups, policy/civic-tech AI convenings, and provider/community events from OpenAI, Anthropic, Google, GitHub, AWS, Microsoft, Cloudflare, Vercel, Hugging Face, LangChain, LlamaIndex, Linux Foundation, MLCommons, NIST, and Mozilla-adjacent communities
+
+### High-Signal Practitioner Voices
+
+When time permits, scan a small set of practitioner/thought-leader sources for non-obvious frames, especially around AI agents, coding, organizational change, startup strategy, and platform shifts.
+
+Treat these as strategic signals and interpretation, not primary factual confirmation unless they link to primary sources:
+
+- Steve Yegge: https://steve-yegge.medium.com/ and https://yegge.ai/ for field reports on agentic coding, Gas Town/Gas City/Beads, AI literacy, platform lessons from Amazon/Google, and the cultural side of AI transformation.
+- Gene Kim: DevOps, enterprise technology leadership, vibe coding, organizational change, and high-performing engineering cultures.
+- Gergely Orosz / The Pragmatic Engineer: engineering leadership, developer tools, platform adoption, and practitioner market feedback.
+- Latent Space / swyx: AI engineering, agents, model ecosystem, startup and practitioner interviews.
+- Simon Willison: hands-on AI tooling, security, local models, prompt injection, and practical evals.
+- Chip Huyen and Eugene Yan: applied ML systems, production AI, evaluation, reliability, and data workflows.
+- Ethan Mollick: AI adoption in work, education, productivity, and behavior change.
+- Andrej Karpathy, Jeremy Howard, Sebastian Raschka, Nathan Lambert: model development, open models, training/inference patterns, and AI education.
+- Hamel Husain, Shreya Shankar, Jason Liu: evals, AI product quality, structured extraction, RAG, and practical LLM application engineering.
+- Benedict Evans, Ben Thompson / Stratechery, Sarah Guo, Elad Gil, and a16z AI: market structure, startup opportunities, infrastructure shifts, and business-model implications.
+
+Use these voices to answer:
+
+- What new mental model or vocabulary is emerging?
+- What are experienced builders actually changing in their workflow?
+- What is becoming a consulting, training, or implementation wedge?
+- What is the gap between provider/product messaging and practitioner reality?
+- What lesson from earlier platform shifts, especially early Amazon/platformization, maps onto today's agent platforms?
+
+### AI Conferences And Speaking Opportunities
+
+When useful, scan upcoming AI-related conferences, summits, meetups, webinars, and community events for opportunities to attend, speak, sponsor, or use as market-intelligence gathering.
+
+Prioritize events that match the user's current themes: AI agents, applied AI, coding agents, MCP/RAG/data workflows, evals and governance, public-interest/civic tech, startup strategy, enterprise AI adoption, local government/media/policy workflows, and thought-leadership positioning around early Amazon/platform lessons.
+
+For each high-signal event, capture:
+
+- event name and official link
+- date, location, and remote/hybrid availability
+- speaker/CFP/application deadline, if open or soon
+- registration deadline, early-bird deadline, or price-change date, if available
+- why it matters for attending, speaking, partnerships, consulting, or market validation
+- suggested angle for the user, such as talk topic, panel pitch, networking target, or customer-discovery hypothesis
+
+Only include events with current, source-linked dates. Do not guess deadlines. If a deadline is missing, say "deadline not found" rather than inventing one. Prefer official event/CFP pages over aggregator listings.
 
 ## Evidence Rules
 
@@ -63,6 +107,7 @@ For each candidate item, ask:
 - Is there a practical test that could be run in 30-60 minutes?
 - Is there a user pain point or startup category hiding behind it?
 - Is someone building an AI-native competitor to a legacy business, service firm, or vertical software category by using AI to lower costs, compress implementation time, or reach market faster?
+- Is there an upcoming conference, CFP, speaker deadline, early-bird deadline, or relevant event that creates a time-sensitive opportunity for the user to attend, speak, sponsor, or network?
 - Is it a high-confidence fact, a repeated practitioner signal, or a weak one-off?
 
 Prefer items with at least one of:
@@ -74,6 +119,7 @@ Prefer items with at least one of:
 - startup category formation
 - credible AI-native challengers to legacy businesses, especially where speed, labor cost, workflow automation, or implementation cost are the wedge
 - practical thing to try today
+- time-sensitive conference/event deadline or speaking opportunity
 - strategic fit with the user's current priorities, workflows, portfolio, company, or recurring decision areas
 
 ## Brief Structure
@@ -101,6 +147,8 @@ Provider Updates
 Open Source Models And Tools
 
 Foundation And Public-Interest Tech
+
+Upcoming AI Events / CFPs
 
 Watch List
 ```
@@ -189,6 +237,17 @@ Highlight models, repos, libraries, local inference tools, RAG/search/vector too
 ### Foundation And Public-Interest Tech
 
 Include Mozilla, Linux Foundation, Apache, Eclipse, AI Alliance, MLCommons, open standards, safety, interoperability, accessibility, open data, civic tech, and public-interest AI where relevant.
+
+### Upcoming AI Events / CFPs
+
+Include only when there are time-sensitive or strategically relevant items. Prefer 2-5 compact bullets, each with:
+
+- event name, date, location/format, and official link
+- CFP/speaker/application deadline or registration/early-bird deadline
+- why it is relevant for the user
+- one suggested action: apply to speak, register, monitor agenda, propose meeting, or skip
+
+Use this section to support thought-leadership brand building, consulting pipeline, startup/customer discovery, partnership development, and strategic presence in AI communities. Prioritize events where the user could credibly speak about AI agents, platform transitions, early Amazon lessons, operationalizing AI in real organizations, public-interest AI, or GroundVue-relevant media/policy workflows.
 
 ### Watch List
 
