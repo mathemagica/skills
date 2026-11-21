@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Market Testing"
+  short_description: "Test product value, usability and buying assumptions"
+  default_prompt: "Use $product-market-testing to design a bounded experiment and distinguish actual evidence from assumptions before the next investment."
+
+policy:
+  allow_implicit_invocation: true

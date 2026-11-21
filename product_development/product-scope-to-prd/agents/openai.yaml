@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Scope To PRD"
+  short_description: "Turn approved scope into reviewable requirements"
+  default_prompt: "Use $product-scope-to-prd to turn this approved scope into behavioral requirements and obtain owner review before building."
+
+policy:
+  allow_implicit_invocation: true

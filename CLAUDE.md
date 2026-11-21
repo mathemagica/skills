@@ -1,6 +1,6 @@
 # Software Architecture Judgment Library
 
-This directory is a reusable software architecture judgment library for AI coding agents. The skills help an agent plan, build, review, debug, integrate, deploy, operate, and reason about software systems with durable engineering judgment.
+This directory is a reusable product-development and software architecture judgment library for AI coding agents. The skills help an agent discover and test product ideas, then plan, build, review, debug, integrate, deploy, operate, and reason about software systems with durable engineering judgment.
 
 Each skill lives in its own folder with a `SKILL.md` file containing minimal YAML frontmatter and workflow instructions. Keep `SKILL.md` frontmatter portable: use `name` and `description` for discovery, and put platform-specific invocation hints in this index or tool-specific metadata files.
 
@@ -13,6 +13,7 @@ skills/
   data_engineering/
   distributed_systems/
   market_intelligence/
+  product_development/ # Idea, discovery, scope, PRD, prototype, testing, production
 ```
 
 ## How To Use Skills
@@ -35,6 +36,9 @@ Read skills/playbooks/new-web-app-from-scratch/SKILL.md and follow it for this p
 
 | If you are... | Start with... | Add when needed... |
 | --- | --- | --- |
+| Taking a product idea or recorded demo to a prototype | `product_development/new-product-from-scratch/SKILL.md` | owner-reviewed discovery/scope and PRD, then appropriate implementation |
+| Testing demand or usability | `product_development/product-market-testing/SKILL.md` | evidence and bounded experiments, not automatic feature work |
+| Moving a prototype into real use | `product_development/prototype-to-production/SKILL.md` | release-specific safety, integrations and operations |
 | Building a new web app | `playbooks/new-web-app-from-scratch/SKILL.md` | data modeling, database selection, client/server architecture, API design |
 | Assessing an existing app | `playbooks/existing-system-refactoring-assessment/SKILL.md` | request tracing, separation of concerns, server organization, observability |
 | Diagnosing slowness | `playbooks/system-performance-scaling-assessment/SKILL.md` | query optimization, caching, queues, sync/async processing |
@@ -45,6 +49,24 @@ Read skills/playbooks/new-web-app-from-scratch/SKILL.md and follow it for this p
 | Tracking AI/tech market signals | `market_intelligence/ai-tech-morning-brief/SKILL.md` | official provider facts plus practitioner/user signals |
 
 ## Available Skills
+
+### Product Development
+
+| Skill | Path | When To Use |
+|-------|------|-------------|
+| new-product-from-scratch | `product_development/new-product-from-scratch/SKILL.md` | Choose the lifecycle starting point and next stage |
+| product-discovery-to-scope | `product_development/product-discovery-to-scope/SKILL.md` | Interpret recordings/interviews/demos and review MVP scope |
+| product-scope-to-prd | `product_development/product-scope-to-prd/SKILL.md` | Turn approved scope into owner-reviewed requirements |
+| product-prototype-build | `product_development/product-prototype-build/SKILL.md` | Build and verify approved requirements on the right platform |
+| product-market-testing | `product_development/product-market-testing/SKILL.md` | Test problem, usability, value, adoption or buying assumptions |
+| prototype-to-production | `product_development/prototype-to-production/SKILL.md` | Assess and close real-use readiness gaps |
+
+Read the family's [workflow contract](product_development/references/workflow-contract.md)
+for evidence and approval boundaries. Keep scope and PRD reviews separate; do not
+infer approval from silence. Resolve an installed skill's canonical path before
+relative references. The [installation guide](product_development/README.md)
+preserves sibling dependencies. BMAD is optional, installed separately only with
+permission; see the [handoff guide](product_development/references/bmad-integration.md).
 
 ### Playbooks
 

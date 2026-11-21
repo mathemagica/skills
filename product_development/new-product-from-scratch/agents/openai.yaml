@@ -1,0 +1,7 @@
+interface:
+  display_name: "New Product From Scratch"
+  short_description: "Move from product vision to tested software"
+  default_prompt: "Use $new-product-from-scratch to assess this product idea and guide the next appropriate discovery, prototype, testing or production step."
+
+policy:
+  allow_implicit_invocation: true

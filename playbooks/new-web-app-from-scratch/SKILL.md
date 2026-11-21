@@ -9,6 +9,22 @@ Use this playbook when planning, designing, or starting implementation of a new 
 
 The goal is to start simple without skipping the decisions that make a system understandable, changeable, deployable, and operable.
 
+For an unclear product vision, recorded discovery, owner-reviewed scope/PRD,
+market testing or a non-web product, start with
+[new-product-from-scratch](../../product_development/new-product-from-scratch/SKILL.md).
+This playbook remains its web-engineering branch, and can also run independently
+for an already-defined web app. Do not duplicate approved product requirements.
+
+## Right-Size To The Intended Use
+
+Establish whether this is a disposable local prototype, a real-user pilot or an
+operated production service. Select applicable steps below rather than emitting
+every planning artifact by default. A static mockup may need no backend or
+database. A local prototype may need no staging or hosted production environment.
+Do not provision services or force AWS merely because deployment is mentioned.
+Real-user trials still need protections appropriate to their data and potential
+harm. Record deferred decisions and the trigger for revisiting each one.
+
 ## Core Principle
 
 Start with product workflows and data ownership, then move outward to storage, frontend shape, backend shape, architecture, APIs, code organization, deployment, and operations. Add queues, caches, replicas, multitenancy, or advanced distributed systems patterns only when the product shape or evidence justifies them.
@@ -187,13 +203,15 @@ Output a cache plan or an explicit "not yet."
 
 Use [`environment-management`](../../distributed_systems/environment-management/SKILL.md).
 
-Start with:
+For an operated web service, a useful starting point is:
 
 - local
 - staging
 - production
 
-Add preview, QA, pre-production, sandbox, demo, or disaster recovery environments only when the team workflow, risk profile, or business requirements justify them.
+For a local prototype, local alone may suffice. Add staging, production, preview,
+QA, pre-production, sandbox, demo, or disaster recovery environments only when
+the intended use, risk profile or team workflow justifies them.
 
 Output an environment map and promotion expectations.
 
@@ -251,7 +269,9 @@ Use these selectively:
 
 ## Expected Output
 
-When invoked, produce:
+For a production-oriented web app, the applicable outputs include the following.
+For a prototype or narrower decision, produce only what is needed for the next
+step and mark important omissions as deferred or not applicable:
 
 1. Product and user workflow summary
 2. Relevant skills selected and why

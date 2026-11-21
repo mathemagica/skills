@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Discovery To Scope"
+  short_description: "Turn interviews and demos into reviewed MVP scope"
+  default_prompt: "Use $product-discovery-to-scope to interpret these product materials and propose a small evidence-backed scope for owner review."
+
+policy:
+  allow_implicit_invocation: true

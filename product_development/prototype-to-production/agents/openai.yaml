@@ -1,0 +1,7 @@
+interface:
+  display_name: "Prototype To Production"
+  short_description: "Assess and close real-use readiness gaps"
+  default_prompt: "Use $prototype-to-production to assess this prototype for its intended release, prioritize gaps and verify agreed mitigations."
+
+policy:
+  allow_implicit_invocation: true

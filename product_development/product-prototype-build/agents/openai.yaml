@@ -1,0 +1,7 @@
+interface:
+  display_name: "Product Prototype Build"
+  short_description: "Build and verify the smallest honest prototype"
+  default_prompt: "Use $product-prototype-build to implement this approved PRD on the appropriate platform and verify its acceptance criteria."
+
+policy:
+  allow_implicit_invocation: true

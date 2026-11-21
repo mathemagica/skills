@@ -1,12 +1,52 @@
-# Software Architecture Judgment Library
+# Product Development And Software Architecture Skills
+
+Turn a product idea into a testable prototype, or get focused help with an
+existing software system. These skills work with Codex and Claude Code.
+
+## Start Here
+
+**Have an idea, a screen recording or a rough prototype?** Start with
+[Idea To Market](product_development/README.md#start-your-first-project).
+One entry skill guides the process; you do not need to pick all six yourself.
+
+**Already know the engineering problem?** Use the
+[skill selection guide](#skill-selection-guide) to choose a focused skill or
+playbook instead of running product discovery again.
+
+The product process is:
+
+**Explain or demonstrate the idea -> review a small first-version scope ->
+review requirements -> build and verify -> test with users -> decide what next.**
+
+Scope and requirements have separate owner reviews before building. User testing
+can happen earlier when it is the cheapest way to learn. Production work is a
+separate decision, not an automatic consequence of making a prototype.
+
+You need an AI coding assistant with access to a local checkout and a separate
+project workspace. Start by pointing it at the entry file, without installing
+anything:
+
+```text
+Read /absolute/path/to/skills/product_development/new-product-from-scratch/SKILL.md
+and help me explore this product idea: [your idea]. Keep my project materials in
+[my separate project folder]. Start with discovery; don't build anything yet.
+```
+
+Replace the paths and bracketed text. For discoverable skill commands, see
+[installation](product_development/README.md#installation). **BMAD is optional**;
+recording/transcription tools are needed only if you choose that input route.
 
 ## What These Skills Are For
 
-This repository is a reusable software architecture judgment library for AI coding agents such as Codex and Claude Code. The skills give an agent durable, task-specific engineering judgment it can apply while planning, building, reviewing, debugging, integrating, deploying, or operating software systems.
+This repository is a reusable product-development and software architecture judgment library for AI coding agents such as Codex and Claude Code. The skills help turn product ideas into testable software, then apply durable engineering judgment while building, reviewing, debugging, integrating, deploying, or operating it.
 
 Each skill is a small, portable instruction package built around a `SKILL.md` file, with optional platform metadata in files such as `agents/openai.yaml`. A skill tells the agent when to use a pattern, what questions to ask, what tradeoffs to consider, what evidence to gather, and what kind of output to produce. Playbooks combine multiple skills into larger workflows, such as building a new web app, assessing an existing system for refactoring, or diagnosing performance bottlenecks.
 
-These skills are not application code, templates, or rigid checklists. They are reusable engineering guidance for recurring software decisions: how to separate concerns, choose frameworks and databases, design APIs, model data, reason about caching and queues, manage environments and deployments, instrument systems, and evaluate architecture before changing it.
+These are not prebuilt applications or a mandatory checklist. They are reusable
+guidance for product and engineering decisions, with optional interview and
+review templates. Engineering topics include separating concerns, choosing
+frameworks and databases, designing APIs, modeling data, reasoning about caching
+and queues, managing deployments and evaluating architecture before changing it.
 
 Use them when you want an agent to work more like a senior engineering collaborator: grounding recommendations in the codebase, naming tradeoffs, choosing simple defaults, sequencing work, and producing plans or code changes that can be reviewed.
 
@@ -22,9 +62,22 @@ The library is organized around the kinds of judgment an agent needs while doing
 - **Operational skills** cover debugging, environments, deployment, observability, and production change safety.
 - **Scaling and distributed systems skills** help reason from measured bottlenecks toward caches, queues, async processing, replication, idempotency, and CAP tradeoffs.
 - **Playbooks** compose multiple skills into larger workflows so the agent can select and sequence the right skills instead of applying one pattern in isolation.
+- **Product development skills** connect interviews and demonstrations to reviewed scope, requirements, prototypes, market learning and real-use readiness. Start with the [Idea To Market guide](product_development/README.md).
 - **Market intelligence skills** support recurring external scanning workflows that inform product, technical, and business strategy.
 
 ## Contents
+
+### Product Development
+
+- `new-product-from-scratch`: enter at the appropriate lifecycle stage and coordinate the family without requiring a web app.
+- `product-discovery-to-scope`: turn interviews, recordings, diagrams and demos into evidence-backed MVP scope for owner review.
+- `product-scope-to-prd`: turn approved scope into behavioral requirements, then obtain separate PRD signoff.
+- `product-prototype-build`: implement and verify the smallest honest prototype using relevant engineering skills.
+- `product-market-testing`: test usability, value, adoption and buying assumptions; record learning rather than assuming demand.
+- `prototype-to-production`: assess and close release-specific gaps in integrations, data safety, operations and ownership.
+
+See [installation, media requirements and optional BMAD integration](product_development/README.md).
+BMAD is not required or installed by this library.
 
 ### Playbooks
 
@@ -80,6 +133,9 @@ Use playbooks when you want the agent to select and sequence multiple skills for
 
 | If you are... | Start with... | Add when needed... |
 | --- | --- | --- |
+| Turning an idea or recorded demo into a testable product | `$new-product-from-scratch` | Discovery, scope review, PRD signoff, prototype and learning |
+| Testing a product or buying assumption | `$product-market-testing` | Start before code if that is the cheapest credible test |
+| Preparing a prototype for real use | `$prototype-to-production` | Relevant deployment, integration and operational skills |
 | Building a new web app | `$new-web-app-from-scratch` | `$data-modeling-first`, `$database-selection`, `$client-server-architecture`, `$api-design-best-practices` |
 | Assessing an existing app | `$existing-system-refactoring-assessment` | `$request-flow-tracing`, `$separation-of-concerns`, `$full-stack-server-organization`, `$observability-monitoring` |
 | Diagnosing slowness | `$system-performance-scaling-assessment` | `$query-optimization`, `$caching-patterns`, `$queue-architecture-patterns`, `$sync-async-processing` |
@@ -111,6 +167,16 @@ You can combine skills when the task spans multiple layers. Prefer starting with
 
 ## Scenario Guides
 
+### Taking A Product Idea To Market
+
+Start with `$new-product-from-scratch`, or invoke a stage independently. Keep
+discovery evidence separate from inference, review MVP scope with the vision
+owner, then separately review the PRD before building. Choose the right artifact
+for the test: a service, mockup, skill, desktop application or web app. Owner
+approval is not market validation or permission to publish. Use the
+[synthetic worked example](product_development/examples/offline-session-planner.md)
+and [behavioral test protocol](product_development/evaluations/scenarios.md).
+
 ### Building A New Web App From Scratch
 
 Start with product and data shape before code:
@@ -122,7 +188,7 @@ Start with product and data shape before code:
 5. `$client-server-architecture`: decide what belongs on the client, server, API boundary, and durable storage.
 6. `$api-design-best-practices`: define endpoint contracts, auth, errors, pagination, idempotency, and compatibility.
 7. `$full-stack-server-organization`: organize server routes, controllers/views, models, services, serializers, validators, and jobs.
-8. `$environment-management`: start with `Local -> Staging -> Production`, then add other environments only when justified.
+8. `$environment-management`: choose environments for the intended use; a local prototype may need only local, while an operated service commonly needs staging and production.
 9. `$deployment-management`: define artifact promotion, env vars, secrets, migrations, verification, and rollback.
 10. `$observability-monitoring`: add minimum useful logs, metrics, health checks, deploy markers, and alerts.
 11. `$aws-web-app-deployment-defaults`: if deploying on AWS, choose default DNS, CDN, TLS, compute, database, IAM, secrets, and monitoring.
@@ -180,6 +246,11 @@ For a full assessment, start with `$existing-system-refactoring-assessment`. Use
 
 ## Using With Codex
 
+For complete installation with relative dependencies intact, use the
+[library installation instructions](product_development/README.md#installation).
+The same portable files support Codex and Claude Code; the installer creates
+links without overwriting existing skills and does not install BMAD.
+
 In Codex, these skills can be invoked by name when they are installed or available in the active skill search path.
 
 Use explicit prompts like:
@@ -209,7 +280,10 @@ Claude Code can use skills that follow the `SKILL.md` format with YAML frontmatt
 
 Use the `description`, the skill body, and [CLAUDE.md](CLAUDE.md) as the Claude-facing discovery layer instead of adding platform-specific frontmatter keys that current Codex validation rejects.
 
-To use them with Claude Code, copy or symlink skill folders into a Claude skills directory, such as:
+For the product-development family, use the
+[complete-library installation](product_development/README.md#installation) so
+shared references and engineering handoffs stay available. For other standalone
+skills, copy or symlink their folders into a Claude skills directory, such as:
 
 ```text
 ~/.claude/skills/
@@ -224,11 +298,11 @@ or a project-local directory such as:
 Then invoke them explicitly:
 
 ```text
-Use $deployment-management to plan this release.
+/deployment-management Plan this release.
 ```
 
 ```text
-Use $third-party-data-integration to design the HubSpot sync.
+/third-party-data-integration Design the HubSpot sync.
 ```
 
 Claude can also discover skills from their `description` metadata and from this repository index, but explicit invocation is best when you want a specific workflow.
