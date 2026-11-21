@@ -12,7 +12,6 @@ skills/
   software_engineering/
   data_engineering/
   distributed_systems/
-  market_intelligence/
   product_development/ # Idea, discovery, scope, PRD, prototype, testing, production
 ```
 
@@ -46,7 +45,6 @@ Read skills/playbooks/new-web-app-from-scratch/SKILL.md and follow it for this p
 | Choosing storage | `data_engineering/database-selection/SKILL.md` | data modeling, query optimization, primary/secondary database architecture |
 | Planning deployment | `distributed_systems/environment-management/SKILL.md` | deployment management, AWS defaults, observability |
 | Reviewing architecture tradeoffs | `software_engineering/client-server-architecture/SKILL.md` | API design, CAP tradeoffs, multitenancy |
-| Tracking AI/tech market signals | `market_intelligence/ai-tech-morning-brief/SKILL.md` | official provider facts plus practitioner/user signals |
 
 ## Available Skills
 
@@ -116,11 +114,13 @@ permission; see the [handoff guide](product_development/references/bmad-integrat
 | aws-web-app-deployment-defaults | `distributed_systems/aws-web-app-deployment-defaults/SKILL.md` | Choosing secure AWS defaults for web apps |
 | observability-monitoring | `distributed_systems/observability-monitoring/SKILL.md` | Designing logs, metrics, traces, and alerts |
 
-### Market Intelligence
+### Related Project
 
-| Skill | Path | When To Use |
-|-------|------|-------------|
-| ai-tech-morning-brief | `market_intelligence/ai-tech-morning-brief/SKILL.md` | Creating an AI/tech morning brief with provider updates, open source news, practitioner signals, and market opportunities |
+AI Tech Morning Brief is maintained separately at
+[mathemagica/ai-tech-morning-brief](https://github.com/mathemagica/ai-tech-morning-brief).
+It is not available as a bundled skill here. Follow that repository's migration
+instructions for existing installations and schedules; do not use the old local
+path or install/create duplicates.
 
 ## Skill Composition
 

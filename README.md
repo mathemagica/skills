@@ -63,7 +63,6 @@ The library is organized around the kinds of judgment an agent needs while doing
 - **Scaling and distributed systems skills** help reason from measured bottlenecks toward caches, queues, async processing, replication, idempotency, and CAP tradeoffs.
 - **Playbooks** compose multiple skills into larger workflows so the agent can select and sequence the right skills instead of applying one pattern in isolation.
 - **Product development skills** connect interviews and demonstrations to reviewed scope, requirements, prototypes, market learning and real-use readiness. Start with the [Idea To Market guide](product_development/README.md).
-- **Market intelligence skills** support recurring external scanning workflows that inform product, technical, and business strategy.
 
 ## Contents
 
@@ -119,9 +118,14 @@ BMAD is not required or installed by this library.
 - `aws-web-app-deployment-defaults`: choose secure, scalable AWS defaults for web apps.
 - `observability-monitoring`: design useful logs, metrics, traces, dashboards, health checks, and alerts.
 
-### Market Intelligence
+### Related Project
 
-- `ai-tech-morning-brief`: scan AI and technology provider updates, release notes, open source model/tool news, practitioner communities, startup signals, and user pain points to produce a concise morning brief with things to try and business opportunity patterns.
+The AI Tech Morning Brief has moved to its own repository:
+[mathemagica/ai-tech-morning-brief](https://github.com/mathemagica/ai-tech-morning-brief).
+It is no longer bundled with this product-development and engineering library.
+Existing users should follow its migration instructions to preserve customizations
+and update any installed links or scheduled skill paths. The discovery name is
+unchanged; do not install duplicate copies or create another schedule.
 
 ## How To Use These Skills
 
@@ -143,7 +147,6 @@ Use playbooks when you want the agent to select and sequence multiple skills for
 | Choosing storage | `$database-selection` | `$data-modeling-first`, `$query-optimization`, `$primary-secondary-database-architecture` |
 | Planning deployment | `$environment-management` | `$deployment-management`, `$aws-web-app-deployment-defaults`, `$observability-monitoring` |
 | Reviewing architecture tradeoffs | `$client-server-architecture` | `$api-design-best-practices`, `$cap-theorem-practical-design`, `$multitenancy-architecture` |
-| Tracking AI/tech market signals | `$ai-tech-morning-brief` | Use official provider sources for facts and practitioner sources for signals |
 
 Example:
 
