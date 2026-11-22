@@ -27,6 +27,15 @@ comparison with the participant's current method, not only their estimate.
 Start with checks the team can run without outside participants, such as
 confirming the artifact installs and works on a second machine.
 
+Before choosing tests, look at comparable products for channel, pricing-model and
+team-size patterns: competitor pricing pages, founder case-study collections and
+public revenue databases. Record each comparable's source, whether its figures are
+founder-reported or researched, and how old they are. Use comparables to set
+hypotheses and to pick which channel or price to test first. They are never
+evidence of demand for this product; collections of businesses that made money
+overstate how often a model works, and they rarely record how founders validated
+demand.
+
 Propose the cheapest credible experiment: a neutral interview, task-based test,
 manual service trial, prototype session or explicitly authorized paid pilot.
 Do not force a build when a conversation can resolve the key uncertainty.

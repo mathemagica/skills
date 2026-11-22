@@ -15,6 +15,11 @@ Delete sections that don't apply. Keep a small test's plan small.
 | ID | Finding | Label (stated / demonstrated / inferred / unknown) | Source |
 | --- | --- | --- | --- |
 
+### Comparables (hypothesis input, not demand evidence)
+
+| Comparable | Why comparable | Pricing | Channels | Revenue and date | Source (founder-reported or researched) |
+| --- | --- | --- | --- | --- | --- |
+
 ## 2. Users, buyers and operators
 
 Who uses it, who pays, who sets it up. Note where these differ.
