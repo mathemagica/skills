@@ -30,7 +30,11 @@ confirming the artifact installs and works on a second machine.
 Before choosing tests, look at comparable products for channel, pricing-model and
 team-size patterns: competitor pricing pages, founder case-study collections and
 public revenue databases. Record each comparable's source, whether its figures are
-founder-reported or researched, and how old they are. Use comparables to set
+founder-reported or researched, and how old they are. Weigh revenue by how it is
+known: verified from a payment provider is stronger than founder-reported, which
+is stronger than a researched estimate. Self-listed and for-sale collections skew
+toward founders proud of their numbers or selling a stalled business, and asking
+prices are not sale prices. Use comparables to set
 hypotheses and to pick which channel or price to test first. They are never
 evidence of demand for this product; collections of businesses that made money
 overstate how often a model works, and they rarely record how founders validated
@@ -82,6 +86,9 @@ explanations for any metric. Distinguish stated willingness to pay, a pilot
 agreement, a payment and repeat revenue. Before any real payment, confirm with the
 owners who receives the money (person or entity), refund terms, taxes and the
 payment provider; those are owner decisions, often needing professional advice.
+Record money precisely: gross or net, refunds and fees subtracted or not, and
+the payment provider's records as the source, not screenshots or recollection.
+Provider dashboards and third-party trackers can disagree, so name the source.
 Without usage telemetry, label reuse as self-reported unless the participant
 shares evidence such as an exported file or a log. Preserve negative and inconclusive results.
 

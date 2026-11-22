@@ -40,6 +40,15 @@ unknown) where a finding is summarized.
 
 Never add levels together. Record how many people received an offer.
 
+Money recorded as: [gross / net of fees and refunds], source: [payment provider export].
+
+### After a paid launch only
+
+Use once there are paying customers, from the payment provider and analytics:
+
+| Period | Revenue (gross / net) | Active paying customers | Month-over-month growth | Churn (subscriptions) | Traffic | Revenue per visitor (30-day revenue / 30-day traffic) |
+| --- | --- | --- | --- | --- | --- | --- |
+
 ## 5. Criterion outcomes
 
 | ID | Met / not met / inconclusive | Evidence with denominators | Missing data | Alternative explanations |
