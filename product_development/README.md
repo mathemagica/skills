@@ -162,6 +162,9 @@ without competing PRDs, duplicate orchestration or bypassed owner reviews.
 - [PRD owner summary](templates/prd-owner-summary.md), a one-page companion for PRD
   approval
 - [Demo script](templates/demo-script.md) for the owner to show a verified prototype
+- [Market test plan](templates/market-test-plan.md), [test session guide and
+  observation sheet](templates/test-session-guide.md) and
+  [learning record](templates/learning-record.md) for market testing
 
 Templates are starting points; adapt them to the project and the person.
 
