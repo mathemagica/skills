@@ -29,7 +29,10 @@ confirming the artifact installs and works on a second machine.
 
 Before choosing tests, look at comparable products for channel, pricing-model and
 team-size patterns: competitor pricing pages, founder case-study collections and
-public revenue databases. Record each comparable's source, whether its figures are
+public revenue databases. Check failure databases for similar products that shut
+down and turn their stated causes into assumptions. See
+[market research sources](../references/market-research-sources.md) for where to
+look and how much each source can support. Record each comparable's source, whether its figures are
 founder-reported or researched, and how old they are. Weigh revenue by how it is
 known: verified from a payment provider is stronger than founder-reported, which
 is stronger than a researched estimate. Self-listed and for-sale collections skew
